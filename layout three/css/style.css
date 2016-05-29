@@ -1,0 +1,319 @@
+@font-face {
+    font-family: "BebasNeue"; /* Имя шрифта */
+    src: url(BebasNeue.ttf);
+   }
+@font-face {
+    font-family: "Lobster"; /* Имя шрифта */
+    src: url(Lobster.ttf);
+   }
+* {
+	box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+button, button:active, button:focus {
+    outline: none;
+}
+a:focus {
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+}
+wrapper{
+    position: relative;
+}
+header{
+    padding: 0 11% 0 11%;
+}
+header h1 {
+    font-family:"Lobster";
+    color:  #3bc3b5;
+    font-size: 49px;
+    line-height: 19px;
+    text-align: left;
+    line-height: 83px;
+    float: left;
+}
+input {
+    outline: none;
+    float: left;
+    margin-left: 18%;
+    margin-top: 30px;
+    width: 43%;
+    height: 31px;
+}
+header img {
+    float: left;
+    padding-left: 10%;
+    padding-top: 30px;
+}
+header p{
+    float: left;
+    font-family: "OpenSans";
+    color:  #a1a1a1;
+    font-size: 33px;/* Приближение из-за подстановки шрифтов */
+    line-height: 19px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    line-height: 84px;  
+    margin-left: 2%;    
+}
+nav{
+     background-color:  #4ccfc1;
+     height: 36px;
+    padding-right: 11%;
+    padding-left: 11%;
+}
+nav li {
+    float: left;
+    text-align: justify;
+    height: 21px;
+    border-right: 2px solid #000;
+    border-color: white;
+    margin-top: 10px;
+    padding: 0 2% 0% 2%;
+   
+}
+nav li:first-child{
+    padding-left: 0px;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+	font-size: 20px;	
+    font-family: "BebasNeue";
+
+    font-weight: bold;
+}
+aside{
+    background-color: #40c3ba;
+    width: 100%;
+}
+.aside_img{
+    padding-top: 5%;
+    padding-left: 16%;
+    float: left;
+}
+.aside_img_content {
+    width: 31%;
+    margin-left: 8%;
+    float: left;
+}
+.aside_img_content h2{
+    font-family: "BebasNeue";
+    color:  #ffffff;
+    font-size: 61px;/* Приближение из-за подстановки шрифтов */
+    line-height: 54px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-top: 20%;
+    padding-bottom: 4%;
+}
+.aside_img_content p{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 17px; /* Приближение из-за подстановки шрифтов */
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.aside_img_content button{
+    font-family: "BebasNeue";
+    width: 139px;
+    height:  46px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:  #ffffff;
+    background-color:  rgba(255, 255, 255, 0);
+    color:  #ffffff;
+    font-size: 27px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-top: 6%; 
+    outline: none;
+}
+.checkbox_img {
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    float: left;
+    margin-right: 3%;
+    border-radius: 50%;
+    margin-top: 12%;
+    margin-bottom: 8%;
+}
+.checkbox_img:hover{
+background-color:  rgba(255, 255, 255, 0.32);
+
+}
+section{
+    width:100%;
+}
+
+.section_left, .section_center, .section_right{
+    float: left;
+    width: 28%;
+    height: 100%;
+    border-right: 1px solid #000;
+    border-color: lightgrey;
+    padding-top: 2%;
+    padding-bottom: 1%;
+
+}
+.section_center{
+    width: 30%;
+}
+.section_center,.section_right{
+    padding-left: 2%;
+}
+.section_left{
+    margin-left: 3%;
+}
+.section_right{
+    border: none;
+}
+.section_left_txt, .section_center_txt, .section_right_txt{
+    float: right;
+}
+.section_left_txt, .section_center_txt, .section_right_txt{
+    padding-right: 15%;
+}
+
+.section_center_txt{
+    padding-bottom: 9%;
+}
+.left{
+    float: left;
+    padding: 4% 0 0 2%;
+}
+.right{
+    float: right;
+    padding: 4%  2% 0 0;
+}
+section p{
+    font-family: "BebasNeue";
+    color:  #afafaf;
+    font-size: 27px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 28%;
+}
+section button {
+    border-radius: 2px;
+    background-color: #3cc395;
+    width: 59px;
+    height: 32px;
+    border: none;
+    font-family: "BebasNeue";
+    color:  #ffffff;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 20%;
+}
+.border{
+    line-height: 50px;
+    background-color: #40c3ba;
+    
+}
+.border h2{
+    font-family: "BebasNeue";
+    color:  #ffffff;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 60px;
+    padding-left: 16%;
+    }
+main{
+    width: 100%;
+    padding: 3% 16% 0 16%;
+    
+}
+.container, .container_right{
+    width: 253px;
+    height: 260px;
+    float: left;
+    border: 1px solid;
+    border-color: lightgrey;
+    border-bottom: 5px solid #3cc395;
+    padding-top: 3%;
+    text-align: center;
+    margin:0 8% 4% 0;
+}
+main button{
+    border-radius: 3px;
+    background-color:  #3cc395;
+    font-family: "BebasNeue";
+    color:  #ffffff;
+    font-size: 20.19px;/* Приближение из-за подстановки шрифтов */
+    line-height: 19px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    width: 74px;
+    height: 34px;
+    border: none;
+    float: left;
+    margin-left: 10%;
+}
+.container_content{
+    padding-top: 5%;
+}
+main span, p{
+    font-family: "BebasNeue";
+    color:  #afafaf;
+    font-size: 27px;/* Приближение из-за подстановки шрифтов */
+    line-height: 25px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-top: 1%;
+}
+main span {
+    display: block;
+    float: left;
+    padding-left: 25%;
+}
+.container_right{
+    margin-right:0;
+}
+.href {
+    padding: 0 10% 1% 16%;
+    background-color: #3cc3b5;
+}
+.section_href{
+    float: left;
+    padding-right: 12%;
+    padding-top: 3%;
+}
+.section_href a{
+    font-family: OpenSans;
+    color:  #ffffff;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.section_href h2{
+    font-family: "BebasNeue";
+    color:  #ffffff;
+    font-size: 27px;/* Приближение из-за подстановки шрифтов */
+    line-height: 25px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 10%;
+}
+footer{
+    background-color: #2da89b;
+    margin-top: -1%;
+}
+footer p{
+    font-family: "OpenSans";
+    color:  #ffffff;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    line-height: 46px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}

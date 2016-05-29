@@ -1,0 +1,187 @@
+	* {
+	    box-sizing: border-box;
+	}
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	a:focus {
+	    outline: none;
+	}
+	a {
+	    text-decoration: none;
+	}
+	body {
+	    font-family: "Open Sans", sans-serif;
+	}
+	.wrapper {
+	    width: 1060px;
+	    margin: 0 auto;
+	    padding: 50px 50px;
+	    box-shadow: 2px 4px 5px 4px rgba(0, 0, 0, 0.3);
+	}
+	h1 {
+	    font-size: 40px;
+	    margin-bottom: 40px;
+	}
+
+	                        /* HEADER STYLE*/
+	header {
+	    background: -webkit-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+	    height: 40px;
+	}
+	header li {
+	    float: left;
+	    text-align: center;
+	    height: 38px;
+	    width: 120px;
+	}
+	header a {
+	    display: inline-block;
+	    padding-top: 4px;
+	    width: 100%;
+	    height: 100%;
+	    color: white;
+	    color: #ffffff;
+	    font-size: 15px;
+	    line-height: 30px;
+	    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+	}
+	header li:hover {
+	    background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+	    background: -moz-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+	    background: -o-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+	    background: -ms-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+	    background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%);
+	    border-left: 1px solid gray;
+	    border-right: 1px solid gray;
+	}
+	.dropdown {
+	    position: relative;
+	}
+	.submenu {
+	    display: none;
+	    position: absolute;
+	    top:39px;
+	}
+	.dropdown:hover .submenu {
+	    display: block;
+	}
+	.submenu li {
+	    width: 120px;
+	    background: -webkit-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+	    background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+	}
+	                      /*CLOSE HEADER STYLE*/
+
+	                      /* NAV STYLE*/
+	main{
+	    margin-top: 40px;
+	}
+	nav {
+	    float: left;
+	    width:25%;   
+	}
+	nav li {
+	    text-align: left;
+	    height: 38px;
+	    width: 100%;
+	    border: 1px solid #000;
+	    border-color:  #c8c8c8;
+	    border-bottom: none;
+	    padding-right: 5%;
+	}
+	nav li:last-child {
+	    border-bottom: 1px solid #000;
+	    border-color:  #c8c8c8;
+	}
+	nav li:last-child {
+	    border-bottom: 1px solid #000;
+	    border-color:  #c8c8c8;
+	}
+	nav a {
+	    display: inline-block;
+	    padding-top: 4px;
+	    width: 100%;
+	    height: 100%;
+	    color:  #2c2b2b;
+	    font-size: 15px;
+	    line-height: 29px;
+	    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+	    padding-left: 7%;
+	}
+	nav li:hover {
+	    background-color:  #f9f9f9;
+	}
+	nav a:hover {
+	   margin-left: 10px;
+	}
+	                     /*CLOSE NAV STYLE*/
+
+	                     /*ARTICLE STYLE*/
+	article {
+	    float: right;
+	    width: 70%;
+	}
+	article img {
+	    display: block;
+	    width: 100%;
+	    margin: 0 auto;
+	    border: 1px solid #000;
+	}
+	article p {
+	    color: #2c2b2b;
+	    font-size: 13px; 
+	    line-height: 21px; 
+	    text-align: left;
+	    padding: 35px 0 35px 10px;
+	}
+	                        /*CLOSE ARTICLE STYLE*/
+
+	                        /*FOOTER STYLE*/
+	footer {
+	   background-color:  #e1e1e1;
+	   height: 40px;
+	}
+	footer li {
+	   float: left;
+	    text-align: center;
+	}
+	footer a {
+	    display: inline-block;
+	    padding-top: 5px;
+	    padding-right: 70px;
+	    width: 100%;
+	    height: 100%;
+	    color: #2c2c2c;
+	    font-size: 13px;
+	    line-height: 29px;
+	    text-align: justify;
+	    text-decoration: none;
+	}
+	footer a:first-child {
+	    margin-left: 25px;
+	}
+	footer a:hover {
+	    text-decoration: underline;
+	}
+	footer li:last-child {
+	    color: #2c2c2c;
+	    font-size: 13px; 
+	    line-height: 29px; 
+	    text-align: justify;
+	    float: right;
+	    padding-top: 5px;
+	    padding-right: 26px;
+	}   
+
+
+	                        /*CLOSE FOOTER STYLE*/
