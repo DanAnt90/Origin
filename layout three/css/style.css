@@ -41,6 +41,7 @@ body {
 
 header{
     padding: 0 11% 0 11%;
+    text-align: center;
 }
 header h1 {
     font-family:"Lobster";
@@ -52,27 +53,29 @@ header h1 {
     float: left;
 }
 input {
+    display: inline-block;
     outline: none;
     float: left;
+    margin-right: 5px;
     margin-left: 18%;
     margin-top: 30px;
-    width: 43%;
+    width: 35%;
     height: 31px;
 }
+.shape{
+    float: right;
+}
 header img {
-    float: left;
-    padding-left: 10%;
+    display: inline-block;
+    padding-left: 0;
     padding-top: 30px;
 }
-header p{
-    float: left;
+header a{
     font-family: "OpenSans";
     color:  #a1a1a1;
     font-size: 33px;
     line-height: 19px;
-    text-align: left;
-    line-height: 84px;  
-    margin-left: 2%;    
+    text-align: left;  
 }
 
                                 /*CLOSE HEADER STYLE*/
@@ -81,24 +84,33 @@ header p{
 
 nav{
      background-color:  #4ccfc1;
-     height: 36px;
-   	 padding-right: 11%;
-     padding-left: 11%;
+   	 padding-right: 7%;
+     padding-left: 7%;
 }	
-nav li {
-    float: left;
+ul{
     text-align: center;
+}
+nav li {
+    display: inline-block;
     height: 21px;
     border-right: 2px solid #000;
     border-color: white;
-    margin-top: 10px;
-    padding: 0 2% 0% 2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 0 2.5% 0% 2.5%;
 }
 nav a {
     display: inline-block;
     color: white;
     text-decoration: none;
 	font-size: 20px;	
+}
+nav ul li:first-child{
+    padding-left: 0;
+}
+nav ul li:last-child{
+    padding-right: 0;
+    border: none;
 }
 
                                 /*CLOSE NAV STYLE*/
@@ -108,30 +120,31 @@ nav a {
 aside{
     background-color: #40c3ba;
     width: 100%;
+    padding: 62px 18% 52px 14%;
 }
-.aside_img{
-    padding-top: 5%;
-    padding-left: 16%;
+aside img{
     float: left;
+    display: block;
+    width: 31%
 }
 .aside_img_content {
-    width: 31%;
+    width: 44%;
     margin-left: 8%;
     float: left;
+    position: relative;
 }
 .aside_img_content h2{
     color:  #ffffff;
     font-size: 61px;
-    line-height: 54px;
+    line-height: 52px;
     text-align: left;
-    padding-top: 20%;
     padding-bottom: 4%;
 }
 .aside_img_content p{
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     font-size: 17px; 
-    line-height: 28px; 
+    line-height: 35px; 
     text-align: left;
 }
 .aside_img_content button{
@@ -156,23 +169,22 @@ aside{
     float: left;
     margin-right: 3%;
     border-radius: 50%;
-    margin-top: 12%;
+    margin-top: 15%;
     margin-bottom: 8%;
 }
 .checkbox_img:hover{
 background-color:  rgba(255, 255, 255, 0.32);
 
 }
-
                                 /*CLOSE ASIDE STYLE*/
 
                                 /*SECTION STYLE*/
-
+.section_content{
+    position: relative;
+}
 .section_left, .section_center, .section_right{
     float: left;
     width: 28%;
-    min-width: 300px;
-    height: 100%;
     border-right: 1px solid #000;
     border-color: lightgrey;
     padding-top: 2%;
@@ -198,12 +210,13 @@ background-color:  rgba(255, 255, 255, 0.32);
     padding-bottom: 9%;
 }
 .left{
-    float: left;
-    padding: 4% 0 0 2%;
+    position: absolute;
+    top:33%;
 }
 .right{
-    float: right;
-    padding: 4%  2% 0 0;
+    position: absolute;
+    left: 98.2%;
+    top:33%;
 }
 section p{
     color:  #afafaf;
@@ -242,12 +255,13 @@ section button {
                                 /*MAIN STYLE*/
 
 main{
-    width: 100%;
-    padding: 3% 16% 0 16%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 10% 0 10%;
     
 }
 .container, .container_right{
-    width: 253px;
+    width: 28%;
     height: 260px;
     float: left;
     border: 1px solid;
@@ -257,22 +271,26 @@ main{
     text-align: center;
     margin:0 8% 4% 0;
 }
+.container img, .container_right img{
+    max-width: 100%;
+}
 main button{
+    display: inline-block;
     border-radius: 3px;
     background-color:  #3cc395;
     font-family: "BebasNeue";
     color:  #ffffff;
     font-size: 20.19px;
-    line-height: 19px;
+    line-height: 30px;
     text-align: center;
-    width: 74px;
-    height: 34px;
+    width: 30%;
     border: none;
     float: left;
     margin-left: 10%;
 }
 .container_content{
     padding-top: 5%;
+    margin: 0 auto;
 }
 main span, p{
     color:  #afafaf;
@@ -294,12 +312,12 @@ main span {
                                 /*SECTION class="href" STYLE*/
 
 .href {
-    padding: 0 10% 1% 16%;
+    padding: 0 0% 1% 15%;
     background-color: #3cc3b5;
 }
 .section_href{
     float: left;
-    padding-right: 12%;
+    margin-right: 12%;
     padding-top: 3%;
 }
 .section_href a{
@@ -307,6 +325,8 @@ main span {
     color:  #ffffff;
     font-size: 15px;
     line-height: 28px;
+}
+.section_href li{
     text-align: left;
 }
 .section_href h2{
@@ -334,7 +354,7 @@ footer p{
 }
 
                                 /*CLOSE FOOTER  STYLE*/
-
+/*
 @media(max-width: 1085px){
     .aside_img{
     padding-top: 5%;
@@ -503,60 +523,13 @@ main{
 .href {
     display: none;
 }
-
-                                /*CLOSE ASIDE STYLE*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                /*CLOSE ASIDE STYLE*/
+/*
 @media(max-width: 320px){
 
                             /*HEADER STYLE*/
+/*
 header{
     padding: 0;
 }
@@ -569,6 +542,7 @@ header p{
                             /*CLOSE HEADER STYLE*/
 
                             /*NAV STYLE*/
+/*
 nav{
      padding-right: 0%;
      padding-left: 0%;
@@ -609,7 +583,7 @@ nav a {
                                 /*CLOSE NAV STYLE*/
 
                                 /*ASIDE STYLE*/
-
+/*
 .aside_img{
     padding-left:   0%;
     padding-right: 0%;
@@ -639,7 +613,7 @@ nav a {
                             /*CLOSE ASIDE STYLE*/
 
                             /*SECTION STYLE*/                            
-
+/*
 .section_left, .section_center, .section_right{
     width: 100%;
 
@@ -680,21 +654,24 @@ nav a {
                             /*CLOSE SECTION STYLE*/ 
 
                             /*MAIN STYLE*/
-
+/*
 main{
-    width: 100%;
-    padding: 3% 0% 0 0%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 3% 0 0 0;
+    
 }
 
 
                                      /*CLOSE MAIN STYLE*/
 
                                 /*SECTION class="href" STYLE*/
-
+/*
 .href {
    display: none;
 }
                             /*CLOSE SECTION class="href" STYLE*/
+/*
 footer{
     background-color: #2da89b;
     margin-top: 4%;
