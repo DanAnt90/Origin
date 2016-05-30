@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "BebasNeue"; /* Имя шрифта */
-    src: url(BebasNeue.ttf);
-   }
+    font-family: "BebasNeue";
+    src: url(../fonts/BebasNeue.ttf);
+}
 @font-face {
-    font-family: "Lobster"; /* Имя шрифта */
-    src: url(Lobster.ttf);
-   }
+    font-family: "Lobster";
+    src: url(../fonts/Lobster.ttf);
+}
 * {
 	box-sizing: border-box;
 }
@@ -16,6 +16,9 @@
 }
 button, button:active, button:focus {
     outline: none;
+}
+nav p{
+    display: none;
 }
 a:focus {
     outline: none;
@@ -28,10 +31,14 @@ html {
 }
 body {
 	width: 100%;
+    font-family: "BebasNeue";
 }
-wrapper{
+.wrapper{
     position: relative;
 }
+
+                                /*HEADER STYLE*/
+
 header{
     padding: 0 11% 0 11%;
 }
@@ -61,40 +68,43 @@ header p{
     float: left;
     font-family: "OpenSans";
     color:  #a1a1a1;
-    font-size: 33px;/* Приближение из-за подстановки шрифтов */
-    line-height: 19px;/* Приближение из-за подстановки шрифтов */
+    font-size: 33px;
+    line-height: 19px;
     text-align: left;
     line-height: 84px;  
     margin-left: 2%;    
 }
+
+                                /*CLOSE HEADER STYLE*/
+
+                                /*NAV STYLE*/
+
 nav{
      background-color:  #4ccfc1;
      height: 36px;
-    padding-right: 11%;
-    padding-left: 11%;
-}
+   	 padding-right: 11%;
+     padding-left: 11%;
+}	
 nav li {
     float: left;
-    text-align: justify;
+    text-align: center;
     height: 21px;
     border-right: 2px solid #000;
     border-color: white;
     margin-top: 10px;
     padding: 0 2% 0% 2%;
-   
-}
-nav li:first-child{
-    padding-left: 0px;
 }
 nav a {
     display: inline-block;
     color: white;
     text-decoration: none;
 	font-size: 20px;	
-    font-family: "BebasNeue";
-
-    font-weight: bold;
 }
+
+                                /*CLOSE NAV STYLE*/
+
+                                /*ASIDE STYLE*/
+
 aside{
     background-color: #40c3ba;
     width: 100%;
@@ -110,10 +120,9 @@ aside{
     float: left;
 }
 .aside_img_content h2{
-    font-family: "BebasNeue";
     color:  #ffffff;
-    font-size: 61px;/* Приближение из-за подстановки шрифтов */
-    line-height: 54px;/* Приближение из-за подстановки шрифтов */
+    font-size: 61px;
+    line-height: 54px;
     text-align: left;
     padding-top: 20%;
     padding-bottom: 4%;
@@ -121,8 +130,8 @@ aside{
 .aside_img_content p{
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
-    font-size: 17px; /* Приближение из-за подстановки шрифтов */
-    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    font-size: 17px; 
+    line-height: 28px; 
     text-align: left;
 }
 .aside_img_content button{
@@ -133,9 +142,9 @@ aside{
     border-style: solid;
     border-width: 3px;
     border-color:  #ffffff;
-    background-color:  rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
     color:  #ffffff;
-    font-size: 27px;/* Приближение из-за подстановки шрифтов */
+    font-size: 27px;
     text-align: center;
     margin-top: 6%; 
     outline: none;
@@ -154,22 +163,20 @@ aside{
 background-color:  rgba(255, 255, 255, 0.32);
 
 }
-section{
-    width:100%;
-}
+
+                                /*CLOSE ASIDE STYLE*/
+
+                                /*SECTION STYLE*/
 
 .section_left, .section_center, .section_right{
     float: left;
     width: 28%;
+    min-width: 300px;
     height: 100%;
     border-right: 1px solid #000;
     border-color: lightgrey;
     padding-top: 2%;
     padding-bottom: 1%;
-
-}
-.section_center{
-    width: 30%;
 }
 .section_center,.section_right{
     padding-left: 2%;
@@ -199,7 +206,6 @@ section{
     padding: 4%  2% 0 0;
 }
 section p{
-    font-family: "BebasNeue";
     color:  #afafaf;
     font-size: 27px;
     line-height: 25px;
@@ -215,24 +221,26 @@ section button {
     font-family: "BebasNeue";
     color:  #ffffff;
     font-size: 19px;
-    font-weight: 400;
     line-height: 19px;
     text-align: center;
     margin-top: 20%;
 }
+
+                                /*CLOSE SECTION STYLE*/
+
 .border{
     line-height: 50px;
     background-color: #40c3ba;
-    
 }
 .border h2{
-    font-family: "BebasNeue";
     color:  #ffffff;
     font-size: 31px;
-    font-weight: 400;
     line-height: 60px;
     padding-left: 16%;
-    }
+}
+
+                                /*MAIN STYLE*/
+
 main{
     width: 100%;
     padding: 3% 16% 0 16%;
@@ -254,8 +262,8 @@ main button{
     background-color:  #3cc395;
     font-family: "BebasNeue";
     color:  #ffffff;
-    font-size: 20.19px;/* Приближение из-за подстановки шрифтов */
-    line-height: 19px;/* Приближение из-за подстановки шрифтов */
+    font-size: 20.19px;
+    line-height: 19px;
     text-align: center;
     width: 74px;
     height: 34px;
@@ -267,10 +275,9 @@ main button{
     padding-top: 5%;
 }
 main span, p{
-    font-family: "BebasNeue";
     color:  #afafaf;
-    font-size: 27px;/* Приближение из-за подстановки шрифтов */
-    line-height: 25px;/* Приближение из-за подстановки шрифтов */
+    font-size: 27px;
+    line-height: 25px;
     text-align: center;
     margin-top: 1%;
 }
@@ -282,6 +289,10 @@ main span {
 .container_right{
     margin-right:0;
 }
+                                /*CLOSE MAIN STYLE*/
+
+                                /*SECTION class="href" STYLE*/
+
 .href {
     padding: 0 10% 1% 16%;
     background-color: #3cc3b5;
@@ -292,20 +303,24 @@ main span {
     padding-top: 3%;
 }
 .section_href a{
-    font-family: OpenSans;
+    font-family: "OpenSans";
     color:  #ffffff;
-    font-size: 15px;/* Приближение из-за подстановки шрифтов */
-    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    font-size: 15px;
+    line-height: 28px;
     text-align: left;
 }
 .section_href h2{
-    font-family: "BebasNeue";
     color:  #ffffff;
-    font-size: 27px;/* Приближение из-за подстановки шрифтов */
-    line-height: 25px;/* Приближение из-за подстановки шрифтов */
+    font-size: 27px;
+    line-height: 25px;
     text-align: left;
     margin-bottom: 10%;
 }
+
+                            /*CLOSE SECTION class="href" STYLE*/
+
+                                /*FOOTER  STYLE*/
+
 footer{
     background-color: #2da89b;
     margin-top: -1%;
@@ -313,7 +328,385 @@ footer{
 footer p{
     font-family: "OpenSans";
     color:  #ffffff;
-    font-size: 15px;/* Приближение из-за подстановки шрифтов */
-    line-height: 46px;/* Приближение из-за подстановки шрифтов */
+    font-size: 15px;
+    line-height: 46px;
     text-align: center;
 }
+
+                                /*CLOSE FOOTER  STYLE*/
+
+@media(max-width: 1085px){
+    .aside_img{
+    padding-top: 5%;
+    padding-left: 10%;
+    float: left;
+}
+nav a { 
+    background-color: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+
+}
+.section_left_txt, .section_center_txt, .section_right_txt{
+    padding-right: 0%;
+}
+.container_right{
+    margin-right:8%;
+}
+.section_href{
+    float: left;
+    padding-right: 8%;
+    padding-top: 3%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 616px){
+nav{
+     padding-right: 0%;
+     padding-left: 0%;
+}   
+nav:hover .hidden_menu{
+    display: block;
+}
+nav p{
+    display: block;
+    line-height: 36px;
+    color: white;
+}
+.hidden_menu{
+    display: none;
+}
+nav ul{
+    position: absolute;
+    width: 100px;
+}
+nav li {
+    margin-top: 36px;
+    width: 100px;
+    float: left;
+    text-align: left;
+    border-right: none;
+    margin-top: 10px;
+    padding: 0 2% 0% 2%;
+}
+nav a { 
+    background-color: white;
+    display: inline-block;
+    color: green;
+}
+.aside_img{
+    padding-top: 5%;
+    padding-left: 0%;
+    width: 100%;
+    float: none;
+}
+.aside_img img{
+      display: block;
+      margin: 0 auto; 
+}
+.aside_img{
+float: none;
+}
+.aside_img img{
+      display: block;
+      margin: 0 auto; 
+}
+.aside_img_content {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+    padding: 0 3% 0 3%;
+}
+.aside_img_content h2{
+    text-align: center;
+    padding: 0;
+    margin-left:0%;
+    margin-top: 4%;
+}
+.aside_img_content p{
+    text-align: center;
+}
+.aside_button{
+    text-align: center;
+    width: 100%;
+}
+.checkbox {
+    padding-left: 42%;
+}
+.section_left, .section_center, .section_right{
+    width: 100%;    
+    border-top: 1px solid lightgrey;
+}
+.section_center,.section_right, .section_left{
+    padding-left: 10%;
+}
+.section_left{
+    margin-left: 0%;
+}
+.section_right{
+    border-bottom: 1px solid lightgrey;
+}
+.section_left_txt, .section_center_txt, .section_right_txt{
+    padding-right: 6%;
+}
+.section_right img{
+    padding-left: 8%;
+}
+.left{
+    float: left;
+    padding: 0 0 0 0;
+     margin-left: 45%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    transform: rotate(90deg);
+}
+.right{
+    float: left;
+    padding: 0 0 0 0;
+    margin-left: 45%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    transform: rotate(90deg);
+}
+main{
+    width: 100%;
+    padding: 5% 20% 0 20%;
+    text-align: center;
+    display: table-cell;
+}
+.container, .container_right{
+    width: 253px;
+    height: 260px;
+    float: left;
+    border: 1px solid;
+    border-color: lightgrey;
+    border-bottom: 5px solid #3cc395;
+    padding-top: 3%;
+    text-align: center;
+    margin: 5% 0% 0% 15%;
+}
+.href {
+    display: none;
+}
+
+                                /*CLOSE ASIDE STYLE*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 320px){
+
+                            /*HEADER STYLE*/
+header{
+    padding: 0;
+}
+header img {
+    padding-left: 20%;
+}
+header p{
+    margin-top: 10px;
+}
+                            /*CLOSE HEADER STYLE*/
+
+                            /*NAV STYLE*/
+nav{
+     padding-right: 0%;
+     padding-left: 0%;
+}   
+nav:hover .hidden_menu{
+    display: block;
+}
+nav p{
+    display: block;
+    line-height: 36px;
+    color: white;
+}
+.hidden_menu{
+    display: none;
+}
+nav ul{
+    position: absolute;
+    width: 100px;
+}
+nav li {
+    margin-top: 36px;
+    width: 100px;
+    float: left;
+    text-align: left;
+    height: 21px;
+    border-right: none;
+    margin-top: 10px;
+    padding: 0 2% 0% 2%;
+}
+nav a {
+    background-color: white;
+    display: inline-block;
+    color: green;
+    text-decoration: none;
+    font-size: 20px;    
+}
+
+                                /*CLOSE NAV STYLE*/
+
+                                /*ASIDE STYLE*/
+
+.aside_img{
+    padding-left:   0%;
+    padding-right: 0%;
+    float: none;
+}
+.aside_img img{
+      display: block;
+      margin: 0 auto; 
+}
+.aside_img_content {
+    width: 88%;
+    float: none;
+}
+.aside_img_content h2{
+    text-align: center;
+}
+.aside_img_content p{
+    text-align: center;
+}
+.aside_img_content button{
+    margin-left: 25%;
+}
+.checkbox {
+    padding-left: 37%;
+}
+
+                            /*CLOSE ASIDE STYLE*/
+
+                            /*SECTION STYLE*/                            
+
+.section_left, .section_center, .section_right{
+    width: 100%;
+
+    border-top: 1px solid lightgrey;
+}
+.section_center,.section_right{
+    padding-left: 0%;
+}
+.section_left{
+    margin-left: 0%;
+}
+.section_right{
+    border-bottom: 1px solid lightgrey;
+}
+.section_left_txt, .section_center_txt, .section_right_txt{
+    padding-right: 6%;
+}
+.section_right img{
+    padding-left: 8%;
+}
+.left{
+    float: left;
+    padding: 0 0 0 0;
+     margin-left: 45%;
+    margin-top: -8%;
+    margin-bottom: -8%;
+    transform: rotate(90deg);
+}
+.right{
+    float: left;
+    padding: 0 0 0 0;
+    margin-left: 45%;
+    margin-top: -10%;
+    margin-bottom: -8%;
+    transform: rotate(90deg);
+}
+
+                            /*CLOSE SECTION STYLE*/ 
+
+                            /*MAIN STYLE*/
+
+main{
+    width: 100%;
+    padding: 3% 0% 0 0%;
+}
+
+
+                                     /*CLOSE MAIN STYLE*/
+
+                                /*SECTION class="href" STYLE*/
+
+.href {
+   display: none;
+}
+                            /*CLOSE SECTION class="href" STYLE*/
+footer{
+    background-color: #2da89b;
+    margin-top: 4%;
+}
+}
+
+
+
+
+
+
+
+
+
+
