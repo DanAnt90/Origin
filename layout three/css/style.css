@@ -17,9 +17,6 @@
 button, button:active, button:focus {
     outline: none;
 }
-nav p{
-    display: none;
-}
 a:focus {
     outline: none;
 }
@@ -113,7 +110,7 @@ nav li {
     border-color: white;
     margin-top: 7px;
     margin-bottom: 7px;
-    padding: 0 2.5% 0% 2.5%;
+    padding: 0 2% 0% 2%;
 }
 nav a {
     display: inline-block;
@@ -134,7 +131,7 @@ nav ul li:last-child{
 .slider_one{
     background-color: #40c3ba;
     width: 100%;
-    padding: 62px 18% 52px 14%;
+    padding: 62px 11% 52px 11%;
 }
 .slider_one img{
     float: left;
@@ -196,7 +193,9 @@ background-color:  rgba(255, 255, 255, 0.32);
     position: relative;
 }
 .slider_two_content{
-    width: 95%;
+    width: 85%;
+     max-height: 240px;
+    overflow: hidden;
     margin:0 auto;  
 }
 .left{
@@ -391,63 +390,57 @@ footer p{
     }
     
                                 /*SLIDER_TWO STYLE*/
+    .slider_two_content .slider_two_content_item:last-child{
+        display: none;
+    }
+    .slider_two_content .slider_two_content_item:nth-child(2){
+        border-right: none;
+    }
     
-    .slider_two_content_img{
-        width:35%;
+    .slider_two_content_item{
+        width:50%;
     }
-    .slider_two_content_text{
-        width: 40%;
-    }
-    .slider_two_content_text button{
-        float: none;
-    }
+    
     
                                 /*GALLERY STYLE*/ 
     
     .gallery{
-        padding: 3% 0% 0 5%; 
+        padding-top: 3%; 
     }
     .gallery_container, .gallery_container_right{
         width: 40%;
-        min-width: 250px;
-        margin:0 4% 4% 0;
+        margin:0 4% 4% 5%;
     }
 }
 
-                                /*@MEDIA 475px STYLE*/
+                                /*@MEDIA 530px STYLE*/
 
 
-@media(max-width: 475px){
+@media(max-width: 530px){
     
                                 /*SLIDER_TWO STYLE*/
     .slider_two{
-        width: 95%;
+        width: 85%;
         margin:0 auto;  
     }   
-    .left{
-        position: absolute; 
-        transform: rotate(90deg);
-        top: -4%;
-        left: 40%
+    .slider_two_content .slider_two_content_item:nth-child(2){
+        display: none;
     }
-    .right{
-        position: absolute;
-        transform: rotate(90deg);
-        top: 90%;
-        left: 40%;
-    }
-    .slider_two_content_item{   
-        width: 100%;  
-        padding-top: 7%;
-        padding-bottom: 7%;
-        border-right: none;
-        border-bottom: 1px solid lightgrey;
+    .slider_two_content_item {
+         width: 100%;
+         border-right: none;
     }
     .slider_two_content_img{
         width: 60%;
     }
     .slider_two_content_text{
         width: 30%;
+    }
+    .gallery_container, .gallery_container_right{
+        float: none;
+        min-width: 250px;
+        width: 40%;
+        margin:4% auto;
     }
 }
 
@@ -457,13 +450,9 @@ footer p{
 @media(max-width: 320px){
     
                                  /*HEADER STYLE*/    
-    
-    header{
-        padding: 3% 5% 0 5%;
-    }
     header h1 {
         font-size: 35px;
-        line-height: 20px;
+        line-height: 30px;
     }
     .input{
            margin-left: 5%;   
@@ -486,12 +475,12 @@ footer p{
     .slider_one_img_content p{
         font-size: 15px; 
         line-height: 25px; 
-        text-align: center;
+        text-align: left;
     }
     .slider_one_img_content h2{
         color:  #ffffff;
         font-size: 50px;
-        text-align: center;
+        text-align: left;
     } 
     
                                 /* SLIDER_TWO STYLE*/    
@@ -500,30 +489,20 @@ footer p{
         width: 95%;
         margin:0 auto;  
     }
-    .left{
-        position: absolute; 
-        transform: rotate(90deg);
-        top: -7%;
-        left: 40%
-    }
-    .right{
-        position: absolute;
-        transform: rotate(90deg);
-        top: 86%;
-        left: 40%;
-    }
     .slider_two_content_item{   
         width: 100%;  
         padding-top: 7%;
         padding-bottom: 7%;
         border-right: none;
-        border-bottom: 1px solid lightgrey;
     }
     .slider_two_content_img{
         width: 60%;
     }
     .slider_two_content_text{
         width: 30%;
+    }
+    .gallery{
+        padding: 0;
     }
     
                                     /*HREF STYLE*/    
