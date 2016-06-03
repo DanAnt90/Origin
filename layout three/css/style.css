@@ -146,9 +146,9 @@ nav ul li:last-child{
 .slider_one_img_content h2{
     color:  #ffffff;
     font-size: 61px;
-    line-height: 52px;
+    line-height: 62px;
     text-align: left;
-    padding-bottom: 4%;
+    padding-bottom: 8%;
 }
 .slider_one_img_content p{
     font-family: 'Open Sans', sans-serif;
@@ -192,7 +192,6 @@ background-color:  rgba(255, 255, 255, 0.32);
 }
 .slider_two_content{
     width: 85%;
-     max-height: 240px;
     overflow: hidden;
     margin:0 auto;  
 }
@@ -232,6 +231,7 @@ background-color:  rgba(255, 255, 255, 0.32);
 .slider_two_content_text{
     float: left;
     width: 25%;
+    padding-top: 5%;
 }
 .slider_two_content_text p{
     color:  #afafaf;
@@ -277,7 +277,7 @@ background-color:  rgba(255, 255, 255, 0.32);
 }
 .gallery_container, .gallery_container_right{
     width: 28%;
-    height: 260px;
+    height: 275px;
     float: left;
     border: 1px solid;
     border-color: lightgrey;
