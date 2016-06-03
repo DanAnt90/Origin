@@ -1,0 +1,404 @@
+* {
+	box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+button, button:active, button:focus {
+    outline: none;
+}
+a:focus {
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+    font-family: "bebasNeue";
+}
+.wrapper{
+    position: relative;
+}
+
+                            //HEADER
+
+header{
+    padding: 0 @main-padding;
+    text-align: center;
+    background-color: @header-bgc;
+    
+    h1{
+        font-family:"lobster";
+        color:@logo-color;
+        font-size:@logo-size;
+        line-height: 83px;
+        float: left;
+    }
+    
+    .input{
+        position: relative;
+        float: left;
+        width:@input-width;
+        min-width: 250px;
+        margin:@input-margin;
+        
+        input{
+            display: block;
+            width: 100%;
+            height: 31px;
+            outline: none;
+        }
+        
+        .input_img{
+            position: absolute;
+            top: -80%;
+            left: 90%;
+        }
+    }
+    
+    .shape{
+        float: right;
+        
+        span{
+            color:@slider-text-color;
+            font-size: 33px;
+            line-height: 19px;
+            text-align: left;
+        }
+    }
+    
+    img{
+        display: inline-block;
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+    
+    a{
+        font-family: "OpenSans";
+        color:@slider-text-color;
+        font-size: 33px;
+        line-height: 19px;
+        text-align: left;  
+        padding-bottom: 5px;
+    }
+    
+}
+
+                        //NAV
+
+nav{
+     background-color: @nav-bgc;
+     padding:@nav-padding;
+    
+    ul{
+        text-align: center;
+    
+        li{
+            display: inline-block;
+            height: 21px;
+            border-right: 2px solid #000;
+            border-color: @white;
+            padding: @menu-position-padiing;
+            margin: @menu-position-margin;
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            &:last-child{
+                padding-right: 0;
+                border: none;
+            }
+        }
+
+        a{
+            display: inline-block;
+            color: @white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+}
+                               //SLIDER_ONE STYLE
+
+.slider_one{
+    background-color:@slider-one_border_hrefs-bgc;
+    width: 100%;
+    padding: 62px @main-padding 52px @main-padding;
+
+    img{
+        float: left;
+        display: block;
+        width: 31%;
+    }
+    
+   &_img_content{
+        width: 44%;
+        margin-left: 8%;
+        float: left;
+        position: relative;
+        
+        h2{
+            color: @white;
+            font-size: 61px;
+            line-height: 52px;
+            text-align: left;
+            padding-bottom: 4%;
+        }
+        
+        p{
+            font-family: 'Open Sans', sans-serif;
+            color: @white;
+            font-size: @slider-one-font-size; 
+            line-height: 35px; 
+            text-align: left;
+        }
+        
+        button{
+            font-family: "bebasneue";
+            width: 139px;
+            height: 46px;
+            border-radius: 8px;
+            border: 3px solid @white;
+            color:  #ffffff;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 27px;
+            text-align: center;
+            margin-top: 6%; 
+            outline: none;
+        }
+    }
+    
+    &_checkbox_img{
+        
+        &_slider{
+            width: 9px;
+            height: 9px;
+            background-color: @white;
+            float: left;
+            border-radius: 50%;
+            margin: 15% 3% 8% 0
+        }
+        
+        &_slider:hover{
+            background-color:  rgba(255, 255, 255, 0.32);
+        }
+    }
+}
+
+                                //SLIDER_TWO STYLE
+.slider_two{
+    
+    position: relative;
+    .left{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .right{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    
+    &_content{
+        width: 85%;
+        margin:0 auto;
+        
+        &_item{
+            width: @content_item_width;  
+            float: left;
+            padding-top: 2%;
+            padding-bottom: 1%;
+            border-right: 1px solid @lightgrey;
+            
+            &_img{
+                float: left;
+                width: 60%;
+                
+                img{
+                    display: block;
+                    float: left;
+                    width: 55%;
+                }
+            }
+            
+            &_text{
+                float: left;
+                width: 25%;
+                
+                p{
+                    color: @slider-text-color;
+                    font-size: 27px;
+                    line-height: 25px;
+                    text-align: left;
+                    float: left;
+                }
+                
+                button{
+                    display: inline-block;
+                    border-radius: 3px;
+                    background-color:  @button_color;
+                    font-family: "bebasneue";
+                    color:  @white;
+                    font-size: 20.19px;
+                    height: 32px;
+                    text-align: center;
+                    width: 65px;
+                    border: none;
+                    float: left;
+                    margin-top: 15%;
+                    
+                }
+            }
+            
+        }
+        
+        &_item:last-child{
+                border: none;
+        }
+        
+        &_item:first-child img{
+           width: 65%;
+        } 
+    }
+}
+
+
+                                 //BORDER              
+       
+
+.border{
+    background-color: @slider-one_border_hrefs-bgc;
+    h2{
+        color:@white;
+        font-size: 31px;
+        line-height: 60px;
+        padding-left: 16%;      
+    }
+}
+
+                                //GALLERY STYLE*
+
+
+.gallery{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% @main-padding 0 @main-padding;
+    
+    p{
+        color:  @slider-text-color;
+        font-size: 27px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 1%;
+    }
+    
+    button{
+        display: inline-block;
+        border-radius: 3px;
+        background-color:  @button_color;
+        font-family: "bebasneue";
+        color:  @white;
+        font-size: 20.19px;
+        line-height: 30px;
+        text-align: center;
+        width:74px;
+        border: none;
+        margin-left: 10%;
+    }
+    
+    &_container{
+        width:@gallery-continer-width;
+        height: @gallery-continer-heigth;
+        float: left;
+        border: 1px solid lightgrey;
+        border-bottom: 5px solid @button_color;
+        padding-top: 3%;
+        text-align: center;
+        margin:@gallery-continer-margin;
+        
+        img{
+            max-width: 100%;
+        }
+        
+        &_content{
+            padding-top: 7%;
+            text-align: center;
+        }
+    }
+    
+    .right{
+       margin-right:0;  
+    }
+    
+}
+
+
+              //HREFS STYLE
+
+.href{
+     padding: @hrefs-padding;
+     background-color: @slider-one_border_hrefs-bgc;
+    
+    &_section{
+        float: left;
+        width: @href-width;
+        
+        a{
+            font-family: "OpenSans";
+            color:  @white;
+            font-size: 14px;
+            line-height: 28px;
+            
+        }
+        li{
+            text-align: left;
+        }
+        
+        h2{
+            color: @white;
+            font-size: 25px;
+            line-height: 25px;
+            text-align: left;
+        }
+    }
+}
+
+                                //FOOTER  STYLE
+
+footer{
+    background-color: @footer-color;
+    
+    p{
+        font-family: "OpenSans";
+        color:  @white;
+        font-size: 15px;
+        line-height: 46px;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
