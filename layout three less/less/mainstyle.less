@@ -1,5 +1,8 @@
 // main: main.less
-
+@import 'variables.less';
+@import 'fonts.less';
+@import 'mixins.less';
+@import 'reset.less';
 * {
 	box-sizing: border-box;
 }
@@ -503,69 +506,69 @@ footer{
                                 //@MEDIA 320px STYLE
 
 @media(max-width: 320px){
-     header{
-        .input{
-           margin-left: 5%;   
-           padding-top: 0;
-        }
-    }
-
-    .slider_one{
-    padding: 62px 2% 52px 5%;
-
-   &_img_content{
-        width: 44%;
-        margin-left: 8%;
-        float: left;
-        position: relative;
-        
-        h2{
-            font-size: 50px;
-            text-align: left;
-        }
-        
-        p{
-            font-size: 15px; 
-            line-height: 25px; 
-            text-align: left;
-        }
-    }
-    slider_two{
-                width: 95%;
-                margin:0 auto;
-        
-        &_content{
-
-            &_item{
-                width: 100%;  
-                padding-top: 7%;
-                padding-bottom: 7%;
-                border-right: none;
-                
-                &_img{
-                   width: 60%; 
-                }
-                
-                &_text{
-                    width: 30%;
-                }
+         header{
+            .input{
+               margin-left: 5%;   
+               padding-top: 0;
             }
-            
-            &_item:nth-child(2){
-                display: none;
+        }
+
+        .slider_one{
+        padding: 62px 2% 52px 5%;
+
+       &_img_content{
+            width: 44%;
+            margin-left: 8%;
+            float: left;
+            position: relative;
+
+            h2{
+                font-size: 50px;
+                text-align: left;
+            }
+
+            p{
+                font-size: 15px; 
+                line-height: 25px; 
+                text-align: left;
             }
         }
     }
-        
-     .gallery{
-        padding: 0;
-    }
-        
-    .href{
-        display: none;
-    }
+        slider_two{
+                    width: 95%;
+                    margin:0 auto;
+
+            &_content{
+
+                &_item{
+                    width: 100%;  
+                    padding-top: 7%;
+                    padding-bottom: 7%;
+                    border-right: none;
+
+                    &_img{
+                       width: 60%; 
+                    }
+
+                    &_text{
+                        width: 30%;
+                    }
+                }
+
+                &_item:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+
+         .gallery{
+            padding: 0;
+        }
+
+        .href{
+            display: none;
+        }
 }
-    
 
 
 
