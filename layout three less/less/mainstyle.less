@@ -42,14 +42,14 @@ body {
 
 //HEADER
 header {
-    padding: 0 @main-padding;
+    padding:@main-padding;
     text-align: center;
     background-color: @header-bgc;
     h1 {
         font-family: "lobster";
         color: @logo-color;
         font-size: @logo-size;
-        line-height: 83px;
+        line-height: 50px;
         float: left;
     }
     .input {
@@ -58,6 +58,7 @@ header {
         width: @input-width;
         min-width: 250px;
         margin: @input-margin;
+        margin: 10px 0 0 23%;
         input {
             display: block;
             width: 100%;
@@ -66,23 +67,22 @@ header {
         }
         .input_img {
             position: absolute;
-            top: -80%;
-            left: 90%;
+            top: 15%;
+            right: 0;
         }
     }
     .shape {
         float: right;
+        height: 50px;
         span {
             color: @slider-text-color;
             font-size: 33px;
-            line-height: 19px;
+            line-height: 50px;
             text-align: left;
         }
     }
     img {
-        display: inline-block;
         padding-right: 5px;
-        padding-top: 30px;
     }
     a {
         font-family: "OpenSans";
@@ -128,59 +128,71 @@ nav {
 .slider_one {
     background-color: @slider-one_border_hrefs-bgc;
     width: 100%;
-    padding: 62px @main-padding 52px @main-padding;
-    img {
-        float: left;
-        display: block;
-        width: 31%;
-    }
-    &_img_content {
-        width: 44%;
-        margin-left: 8%;
-        float: left;
-        position: relative;
-        h2 {
-            color: @white;
-            font-size: 61px;
-            line-height: 62px;
-            text-align: left;
-            padding-bottom: 6%;
-        }
-        p {
-            font-family: 'Open Sans', sans-serif;
-            color: @white;
-            font-size: @slider-one-font-size;
-            line-height: 35px;
-            text-align: left;
-        }
-        button {
-            font-family: "bebasneue";
-            padding: 4px 20px;
-            border-radius: 8px;
-            border: 3px solid @white;
-            color: #ffffff;
-            background-color: rgba(255, 255, 255, 0);
-            font-size: 27px;
-            text-align: center;
-            margin-top: 6%;
-            outline: none;
-        }
-        .slider_one_checkbox_img {
-            .checkbox_img_slider {
-                width: 9px;
-                height: 9px;
-                background-color: @white;
+    padding: @slider-one-padding;
+    position: relative;
+        &_container{
+            max-width: 98%;
+            margin: 0 auto;
+            &_img{
                 float: left;
-                border-radius: 50%;
-                margin: 60px 14px 0 0;
+                width: 38%;
+                img {
+                    display: block;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
             }
-            .checkbox_img_slider:hover {
-                background-color: rgba(255, 255, 255, 0.32);
+            &_content{
+                    float: left;
+                    margin-left: 6.5%;
+                    width: 43%;
+                h2 {
+                    color: @white;
+                    font-size: 61px;
+                    line-height: 62px;
+                    text-align: left;
+                    margin-top: 10px;
+                    padding-bottom: 3px;
+                 }
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    color: @white;
+                    font-size: @slider-one-font-size;
+                    line-height: 30px;
+                    text-align: left;
+                    margin-bottom: 6%;
+                }
+                button {
+                    font-family: "bebasneue";
+                    padding: 4px 20px;
+                    border-radius: 8px;
+                    border: 3px solid @white;
+                    color: #ffffff;
+                    background-color: rgba(255, 255, 255, 0);
+                    font-size: 27px;
+                    text-align: center;
+                    outline: none;
+                }
             }
         }
-    }
+    &_checkbox_img{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 25px;
+                &_slider{
+                        width: 9px;
+                        height: 9px;
+                        background-color: @white;
+                        float: left;
+                        border-radius: 50%;
+                        margin: 60px 14px 0 0;
+                        }
+                &_slider:hover{
+                         background-color: rgba(255, 255, 255, 0.32);
+                }
+        }
 }
-
 //SLIDER_TWO STYLE
 .slider_two {
     position: relative;
@@ -268,7 +280,7 @@ nav {
 .gallery {
     width: 90%;
     margin: 0 auto;
-    padding: 3% @main-padding 0 @main-padding;
+    padding: @gallery-padding;
     p,
     h3 {
         color: @slider-text-color;
@@ -437,8 +449,8 @@ footer {
     }
 }
 
-//@MEDIA 320px STYLE
-@media(max-width: 320px) {
+//@MEDIA 380px STYLE
+@media(max-width: 380px) {
     header {
         .input {
             margin-left: 5%;

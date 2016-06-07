@@ -167,7 +167,7 @@ body {
   position: relative;
 }
 header {
-  padding: 0 11%;
+  padding: 15px 11%;
   text-align: center;
   background-color: #ffffff;
 }
@@ -175,15 +175,16 @@ header h1 {
   font-family: "lobster";
   color: #3bc3b5;
   font-size: 49px;
-  line-height: 83px;
+  line-height: 50px;
   float: left;
 }
 header .input {
   position: relative;
   float: left;
-  width: 30%;
+  width: 40%;
   min-width: 250px;
-  margin: 30px 5px 0 18%;
+  margin: 10px 0 0 20%;
+  margin: 10px 0 0 23%;
 }
 header .input input {
   display: block;
@@ -193,22 +194,21 @@ header .input input {
 }
 header .input .input_img {
   position: absolute;
-  top: -80%;
-  left: 90%;
+  top: 15%;
+  right: 0;
 }
 header .shape {
   float: right;
+  height: 50px;
 }
 header .shape span {
   color: #a1a1a1;
   font-size: 33px;
-  line-height: 19px;
+  line-height: 50px;
   text-align: left;
 }
 header img {
-  display: inline-block;
   padding-right: 5px;
-  padding-top: 30px;
 }
 header a {
   font-family: "OpenSans";
@@ -249,34 +249,44 @@ nav ul a {
 .slider_one {
   background-color: #40c3ba;
   width: 100%;
-  padding: 62px 11% 52px 11%;
-}
-.slider_one img {
-  float: left;
-  display: block;
-  width: 31%;
-}
-.slider_one_img_content {
-  width: 44%;
-  margin-left: 8%;
-  float: left;
+  padding: 62px 11.8% 55px;
   position: relative;
 }
-.slider_one_img_content h2 {
+.slider_one_container {
+  max-width: 98%;
+  margin: 0 auto;
+}
+.slider_one_container_img {
+  float: left;
+  width: 38%;
+}
+.slider_one_container_img img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.slider_one_container_content {
+  float: left;
+  margin-left: 6.5%;
+  width: 43%;
+}
+.slider_one_container_content h2 {
   color: #ffffff;
   font-size: 61px;
   line-height: 62px;
   text-align: left;
-  padding-bottom: 6%;
+  margin-top: 10px;
+  padding-bottom: 3px;
 }
-.slider_one_img_content p {
+.slider_one_container_content p {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   font-size: 17px;
-  line-height: 35px;
+  line-height: 30px;
   text-align: left;
+  margin-bottom: 6%;
 }
-.slider_one_img_content button {
+.slider_one_container_content button {
   font-family: "bebasneue";
   padding: 4px 20px;
   border-radius: 8px;
@@ -285,10 +295,15 @@ nav ul a {
   background-color: rgba(255, 255, 255, 0);
   font-size: 27px;
   text-align: center;
-  margin-top: 6%;
   outline: none;
 }
-.slider_one_img_content .slider_one_checkbox_img .checkbox_img_slider {
+.slider_one_checkbox_img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+}
+.slider_one_checkbox_img_slider {
   width: 9px;
   height: 9px;
   background-color: #ffffff;
@@ -296,7 +311,7 @@ nav ul a {
   border-radius: 50%;
   margin: 60px 14px 0 0;
 }
-.slider_one_img_content .slider_one_checkbox_img .checkbox_img_slider:hover {
+.slider_one_checkbox_img_slider:hover {
   background-color: rgba(255, 255, 255, 0.32);
 }
 .slider_two {
@@ -435,7 +450,7 @@ nav ul a {
   margin-right: 0;
 }
 .href {
-  padding: 3% 15% 1% 15%;
+  padding: 3% 15% 1% 16%;
   background-color: #40c3ba;
 }
 .href_section {
@@ -535,7 +550,7 @@ footer p {
     margin: 4% auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   header .input {
     margin-left: 5%;
     padding-top: 0;
