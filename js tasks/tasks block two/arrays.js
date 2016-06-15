@@ -2,7 +2,7 @@ var arr = [];
 var arr2 = [];
 
 function arrRandom(min, max) {
-    for (var i = min; i <= max; i++) {
+    for (var i = 0; i < 10; i++) {
         arr.push(Math.floor(Math.random() * (max - min)) + min)
     }
 }
