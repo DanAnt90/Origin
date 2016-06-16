@@ -27,17 +27,21 @@ var people = [ clifford , brian , chris , bon];
 
 
 function objSort(humanOne, humanTwo) {
-   if (humanOne.height - humanTwo.height > 0 || humanOne.height - humanTwo.height < 0){
+   if (humanOne.height !== humanTwo.height){
   return humanOne.height - humanTwo.height;
     }
     else {
         if(humanOne.surname > humanTwo.surname){
             return 1;
         }
-        else{
+        else if(humanOne.surname < humanTwo.surname){
+            return -1;
+        }
+        else if (humanOne.surname = humanTwo.surname){
             return 0
         }
     }
 }
 
 people.sort(objSort);
+
