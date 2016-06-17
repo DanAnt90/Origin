@@ -30,18 +30,20 @@ function objSort(humanOne, humanTwo) {
    if (humanOne.height !== humanTwo.height){
   return humanOne.height - humanTwo.height;
     }
-    else {
-        if(humanOne.surname > humanTwo.surname){
+    var humOne = humanOne.surname.toLowerCase();
+    var humTwo = humanTwo.surname.toLowerCase();
+    
+        if(humOne > humTwo){
             return 1;
         }
-        else if(humanOne.surname < humanTwo.surname){
+        else if(humOne < humTwo){
             return -1;
         }
-        else if (humanOne.surname = humanTwo.surname){
-            return 0
+        else {
+            return 0;
         }
     }
-}
+
 
 people.sort(objSort);
 
