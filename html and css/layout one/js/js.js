@@ -1,35 +1,17 @@
-function ulFuncOneV1() {
-    var ulOneV1 = document.getElementsByTagName("ul")[0].getElementsByTagName("a");
-
-    var strOneV1 = "";
-
-    for (var i = 0; i < ulOneV1.length; i++) {
-        strOneV1 = strOneV1 + ulOneV1[i].innerHTML + " ";
-    }
-    console.log(strOneV1);
-}
-ulFuncOneV1();
-
 function ulFuncOneV2() {
-    var ulOneV2 = document.getElementsByTagName("ul")[0].getElementsByTagName("li")
+    var ulOneV2 = document.getElementsByTagName("ul")[0].firstElementChild;
     var strOneV2 = "";
 
-    var i = 0;
+do {
+    //если элемент li существует, то записываем innerHTML внутреннего тега <a> в переменную
+    if (ulOneV2 !== null)
+        strOneV2 += ulOneV2.firstElementChild.innerHTML + " ";
+    ulOneV2 = ulOneV2.nextElementSibling;
+}while(ulOneV2 !== null);
 
-    while ( /*ulOneV2[i].nextElementSibling !== null*/ i < 10) {
-
-        strOneV2 = strOneV2 + ulOneV2[i].firstElementChild.innerHTML + " ";
-
-        i++;
-    }
     console.log(strOneV2);
 }
-
 ulFuncOneV2()
-
-
-
-
 
 function ulFuncTwo() {
     var ulTwo = document.getElementsByTagName("ul")[1].children
