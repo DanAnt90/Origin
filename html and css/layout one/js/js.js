@@ -10,18 +10,26 @@ function ulFuncOneV1() {
 }
 ulFuncOneV1();
 
-
 function ulFuncOneV2() {
-    var ulOneV2 = document.body.children[0].children[1].children[0].children;
-
+    var ulOneV2 = document.getElementsByTagName("ul")[0].getElementsByTagName("li")
     var strOneV2 = "";
 
-    for (var i = 0; i < ulOneV2.length; i++) {
-        strOneV2 = strOneV2 + ulOneV2[i].children[0].innerHTML + " ";
+    var i = 0;
+
+    while ( /*ulOneV1[i].nextElementSibling !== null*/ i < 10) {
+
+        strOneV2 = strOneV2 + ulOneV2[i].firstElementChild.innerHTML + " ";
+
+        i++;
     }
     console.log(strOneV2);
 }
+
 ulFuncOneV2()
+
+
+
+
 
 function ulFuncTwo() {
     var ulTwo = document.getElementsByTagName("ul")[1].children
