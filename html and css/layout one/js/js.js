@@ -16,7 +16,7 @@ function ulFuncOneV2() {
 
     var i = 0;
 
-    while ( /*ulOneV1[i].nextElementSibling !== null*/ i < 10) {
+    while ( /*ulOneV2[i].nextElementSibling !== null*/ i < 10) {
 
         strOneV2 = strOneV2 + ulOneV2[i].firstElementChild.innerHTML + " ";
 
