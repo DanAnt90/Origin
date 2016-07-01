@@ -1,0 +1,26 @@
+form {
+    border: 1px solid darkblue;
+    padding: 15px;
+    width: 160px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+label {
+    color: darkblue;
+    font-size: 20px;
+}
+
+button {
+    padding: 5px;
+    color: darkblue;
+    font-size: 15px;
+}
+
+p {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
