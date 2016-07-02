@@ -1,4 +1,34 @@
-function ulFuncOneV2() {
+var $subMenu = $(".submenu").eq(0);
+var $dropDown = $(".dropdown").eq(0);
+var $LastLiAppend = $("ul").eq(1);
+var $img = $("img");
+var $ulLeft = $("ul").eq(2).find("li:odd");
+var $footerText = $("ul.footer li:last-child span");
+
+$dropDown.on("click", function(){
+    $subMenu.toggle();
+})
+
+$LastLiAppend.append("<li>Hide img</li>");
+
+$LastLiAppend.on("click", function(){
+    $img.slideToggle();
+})
+$ulLeft.css({
+    "background-color" : "green",
+    "font-family": "Arial"
+})
+
+$footerText.html("2016");
+
+
+
+
+
+
+
+
+/*function ulFuncOneV2() {
     var ulOneV2 = document.getElementsByTagName("ul")[0].firstElementChild;
     var strOneV2 = "";
 
@@ -34,4 +64,4 @@ function FooterLastChild() {
     var footerLi = document.getElementsByTagName("ul")[3].lastElementChild;
     console.log(footerLi.innerHTML)
 }
-FooterLastChild();
+FooterLastChild();*/
