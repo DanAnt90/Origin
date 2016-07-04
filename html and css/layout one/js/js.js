@@ -1,25 +1,26 @@
 var $subMenu = $(".submenu").eq(0);
 var $dropDown = $(".dropdown").eq(0);
-var $LastLiAppend = $("ul").eq(1);
 var $img = $("img");
-var $ulLeft = $("ul").eq(2).find("li:odd");
+var $ulLeftOdd = $("ul").eq(2).find("li:odd");
 var $footerText = $("ul.footer li:last-child span");
-
-$dropDown.on("click", function(){
+var $headerUl = $("ul.topul");
+$dropDown.on("click", function() {
     $subMenu.toggle();
 })
 
-$LastLiAppend.append("<li>Hide img</li>");
-
-$LastLiAppend.on("click", function(){
+$headerUl.children().eq(2).before('<li><a href="#">Hide img</a><li>');
+$headerUl.children().eq(3).remove();
+$headerUl.children().eq(2).on("click", function() {
     $img.slideToggle();
 })
-$ulLeft.css({
-    "background-color" : "green",
+
+$ulLeftOdd.css({
+    "background-color": "green",
     "font-family": "Arial"
 })
 
 $footerText.html("2016");
+
 
 
 
