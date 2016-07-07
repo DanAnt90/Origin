@@ -32,7 +32,7 @@
                 $('#result').empty();
                 $('#result').append('<div class="item"><p>' + country + '</p></div>');
                 $('#result').append('<div class="item"><p>' + city + '</p></div>');
-                $('#result').append('<div class="item"><img src="http://openweathermap.org/img/w/' + imgId + '.png" alt="pixabay image"></div>');
+                $('#result').append('<div class="item"><img src="http://openweathermap.org/img/w/' + imgId + '.png" alt="weather image"></div>');
                 $('#result').append('<div class="item"><p>' + description + '</p></div>');
                 $('#result').append('<div class="item"><p>' + temp + '</p></div>');
                 $('#result').append('<div class="item"><p>' + coord + '</p></div>');
