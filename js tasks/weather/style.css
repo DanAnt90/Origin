@@ -1,0 +1,23 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.item {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    border-right: 1px solid rgb(128, 255, 255);
+    height: 100%;
+    padding:0 7px;
+    color:darkcyan;
+}
+
+#result {
+    margin-top: 20px;
+    float: left;
+    background: aqua;
+    border-radius: 5px;
+    box-shadow: -1px 0px rgb(128, 255, 255), -1px 1px rgb(128, 255, 255), -2px 1px rgb(127, 254, 254), -2px 2px rgb(127, 254, 254), -3px 2px rgb(126, 253, 253), -3px 3px rgb(126, 253, 253), -4px 3px rgb(125, 252, 252), -4px 4px rgb(125, 252, 252);
+}
