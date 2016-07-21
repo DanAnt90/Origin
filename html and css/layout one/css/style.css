@@ -16,7 +16,7 @@
 	    font-family: "Open Sans", sans-serif;
 	}
 	.wrapper {
-	    width: 1060px;
+	    max-width: 1060px;
 	    margin: 0 auto;
 	    padding: 50px 50px;
 	    box-shadow: 2px 4px 5px 4px rgba(0, 0, 0, 0.3);
@@ -96,10 +96,6 @@
 	main{
 	    margin-top: 40px;
 	}
-	nav {
-	    float: left;
-	    width:25%;   
-	}
 	nav li {
 	    text-align: left;
 	    height: 38px;
@@ -137,10 +133,6 @@
 	                     /*CLOSE NAV STYLE*/
 
 	                     /*ARTICLE STYLE*/
-	article {
-	    float: right;
-	    width: 70%;
-	}
 	article img {
 	    display: block;
 	    width: 100%;
@@ -195,10 +187,5 @@
 
 
 	                        /*CLOSE FOOTER STYLE*/
-.hide a{
-
-    
-}
-
 
 

@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <title>layout one</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper container">
         <h1>
         Fitness
     </h1>
@@ -35,7 +39,7 @@
         </header>
         <main class="clearfix">
             <!--LEFT MENU-->
-            <nav>
+            <nav class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
                 <ul>
                     <li><a href="#">Ноутбуки</a></li>
                     <li><a href="#">Планшеты</a></li>
@@ -46,7 +50,7 @@
                 </ul>
             </nav>
             <!--CONTENT-->
-            <article>
+            <article class="col-lg-8 col-md-8 col-sm-8">
                 <img src="img/image.png" alt="Image" id="img" >
         
                 <p>
@@ -63,9 +67,8 @@
                 <li><a href="#">Контакты</a></li>
                 <li> <span>2014</span> © All rights reserved</li>
             </ul>
-        </footer>
+            </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 
