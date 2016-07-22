@@ -17,27 +17,43 @@
 <body>
     <div class="wrapper container">
         <h1>
-        Fitness
-    </h1>
+            Fitness
+        </h1>
         <!--TOP MENU-->
         <header>
-            <ul class="clearfix topul">
-                <li><a href="">Главная</a></li>
-                <li class="dropdown"><span>Товары<span>
-                    <ul class="submenu ">
-                        <li><a href="#">Ноутбуки</a></li>
-                        <li><a href="#">Планшеты</a></li>
-                        <li><a href="#">Телефоны</a></li>
-                        <li><a href="#">Телевизоры</a></li>
-                        <li><a href="#">Бытовая техника</a></li>
-                        <li><a href="#">Автотовары</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Главная</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Товары
+        <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main class="clearfix">
+        <main class="row">
             <!--LEFT MENU-->
             <nav class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
                 <ul>
@@ -51,8 +67,8 @@
             </nav>
             <!--CONTENT-->
             <article class="col-lg-8 col-md-8 col-sm-8">
-                <img src="img/image.png" alt="Image" id="img" >
-        
+                <img src="img/image.png" alt="Image" id="img" class="img-responsive">
+
                 <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
                 </p>
@@ -67,7 +83,7 @@
                 <li><a href="#">Контакты</a></li>
                 <li> <span>2014</span> © All rights reserved</li>
             </ul>
-            </footer>
+        </footer>
     </div>
     <script src="js/js.js"></script>
 </body>
