@@ -107,8 +107,6 @@ video {
 }
 
 
-/* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -207,7 +205,6 @@ header .input {
     width: 40%;
     min-width: 250px;
     margin: 10px 0 0 20%;
-    margin: 10px 0 0 23%;
 }
 
 header .input input {
@@ -245,32 +242,30 @@ header a {
     font-size: 33px;
     line-height: 19px;
     text-align: left;
-    padding-bottom: 5px;
 }
 
 .navbar {
     background-color: #4ccfc1;
-    padding: 0 7% 0 7%;
     border: none;
     border-radius: 0;
     margin-bottom: 0;
 }
 
 .navbar ul {
-    margin: 0 5%;
+    margin: 0 8%;
 }
 
 .navbar ul li {
     border-right: 2px solid #000;
     border-color: #ffffff;
-    padding: 0 5px;
 }
 
 .navbar ul li a {
     font-size: 20px;
 }
-#myNavbar a{
-color: white
+
+#myNavbar a {
+    color: white
 }
 
 #myCarousel {
