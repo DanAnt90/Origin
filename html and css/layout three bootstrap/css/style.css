@@ -1,0 +1,573 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../fonts/BebasNeue.ttf);
+}
+
+@font-face {
+    font-family: "lobster";
+    src: url(../fonts/lobster.ttf);
+}
+
+.img_responsive {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: "BebasNeue";
+    position: relative;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+header {
+    padding: 15px 11%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+header h1 {
+    font-family: "lobster";
+    color: #3bc3b5;
+    font-size: 49px;
+    line-height: 50px;
+    float: left;
+}
+
+header .input {
+    position: relative;
+    float: left;
+    width: 40%;
+    min-width: 250px;
+    margin: 10px 0 0 20%;
+}
+
+header .input input {
+    display: block;
+    width: 100%;
+    height: 31px;
+    outline: none;
+}
+
+header .input .input_img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+header .shape {
+    float: right;
+    height: 50px;
+}
+
+header .shape span {
+    color: #a1a1a1;
+    font-size: 33px;
+    line-height: 50px;
+    text-align: left;
+}
+
+header img {
+    padding-right: 5px;
+}
+
+header a {
+    font-family: "OpenSans";
+    color: #a1a1a1;
+    font-size: 33px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.navbar {
+    background-color: #4ccfc1;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 0;
+}
+
+.navbar ul {
+    margin: 0 8%;
+}
+
+.navbar ul li {
+    border-right: 2px solid #000;
+    border-color: #ffffff;
+    margin: 10px 0;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#myNavbar a {
+    color: white
+}
+
+#myCarousel {
+    background-color: #40c3ba;
+    background-color: #40c3ba;
+    padding: 62px 11.8% 55px;
+}
+
+.slider_one_container_content h2 {
+    color: #ffffff;
+    font-size: 61px;
+    line-height: 62px;
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 3px;
+}
+
+.slider_one_container_content p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 6%;
+}
+
+.slider_one_container_content button {
+    font-family: "BebasNeue";
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 27px;
+}
+
+.slider_two {
+    position: relative;
+}
+
+.slider_two_content {
+    height: 190px;
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.slider_two_content .slick-prev {
+    left: 0;
+}
+
+.slider_two_content .slick-next {
+    right: 0;
+}
+
+.slider_two_content .slick-next::before,
+.slider_two_content .slick-prev::before {
+    color: black;
+}
+
+.slider_two_content_item {
+    position: relative;
+    width: 33.33%;
+    float: left;
+    height: 190px;
+    border-right: 1px solid lightgrey;
+}
+
+.slider_two_content_item_img {
+    position: absolute;
+    height: 150px;
+    left: 0%;
+    top: 20px;
+    width: 55%;
+}
+
+.slider_two_content_item_img img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.slider_two_content_item_text {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+.slider_two_content_item_text h3 {
+    color: #a1a1a1;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: left;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.slider_two_content_item_text button {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #3cc395;
+    font-family: "BebasNeue";
+    color: #ffffff;
+    font-size: 20px;
+    padding: 2px 12px;
+    text-align: center;
+    border: none;
+    float: left;
+    margin-top: 10%;
+}
+
+.slider_two_content_item:last-child {
+    border: none;
+}
+
+.border {
+    background-color: #40c3ba;
+}
+
+.border h2 {
+    color: #ffffff;
+    font-size: 31px;
+    line-height: 60px;
+    padding-left: 16%;
+}
+
+.gallery {
+    width: 90%;
+    padding: 3% 11% 3% 11%;
+}
+
+.gallery p,
+.gallery h3 {
+    color: #a1a1a1;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.gallery h3 {
+    overflow: hidden;
+    height: 30px;
+}
+
+.gallery_container {
+    margin-bottom: 20px;
+}
+
+.gallery_container_img_content {
+    border: 1px solid lightgrey;
+    border-bottom: 5px solid #3cc395;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.gallery_container_img {
+    height: 120px;
+}
+
+.gallery p,
+.gallery h3 {
+    color: #a1a1a1;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.gallery h3 {
+    overflow: hidden;
+    height: 30px;
+}
+
+.gallery button {
+    border-radius: 3px;
+    background-color: #3cc395;
+    font-family: "BebasNeue";
+    color: #ffffff;
+    font-size: 20.19px;
+    line-height: 30px;
+    text-align: center;
+    width: 74px;
+    border: none;
+    margin-left: 10%;
+}
+
+.href {
+    padding: 1% 15% 1% 17%;
+    background-color: #40c3ba;
+}
+
+.href_section button {
+    color: #ffffff;
+    font-family: "BebasNeue";
+    font-size: 20px;
+    background-color: #40c3ba;
+    border: none;
+    padding: 0;
+}
+
+.href_section a {
+    font-family: "OpenSans";
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.href_section li {
+    text-align: left;
+}
+
+footer {
+    background-color: #2da89b;
+}
+
+footer p {
+    font-family: "OpenSans";
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 46px;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    .slider_two_content_item {
+        width: 50%;
+    }
+    .slider_two_content_item:last-child {
+        display: none;
+    }
+    .slider_two_content_item:nth-child(2) {
+        border: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 5% 0 5%;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    header .input {
+        margin-left: 5%;
+    }
+    header .shape {
+        float: left;
+    }
+    .navbar ul li {
+        border-right: none;
+    }
+    #myCarousel h2 {
+        text-align: center;
+    }
+    #myCarousel p {
+        text-align: center;
+    }
+    .button {
+        text-align: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .slider_two_content_item {
+        border: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery_container {
+        width: 100%;
+    }
+    header .input {
+        margin-left: 5%;
+        padding-top: 0;
+    }
+    slider_two {
+        width: 95%;
+        margin: 0 auto;
+    }
+    slider_two_content_item {
+        width: 100%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        border: none;
+    }
+    .href {
+        display: none;
+    }
+    .slider_two_content_item {
+        border: none;
+    }
+}

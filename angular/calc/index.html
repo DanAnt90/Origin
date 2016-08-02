@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        
+</head>
+<body>
+  <div ng-app="CalculatorApp" ng-controller="CalculatorController">
+  <p><input type="number" ng-model="num.numone"></p>
+  <p><input type="number" ng-model="num.numtwo"></p>
+  <div>
+      {{result()}}
+  </div>
+ <button ng-click="plus()">+</button>
+ <button  ng-click="subtraction()">-</button>
+ <button  ng-click="multiply()">*</button>
+ <button  ng-click="divide()">/</button>
+ </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
