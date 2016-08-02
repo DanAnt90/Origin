@@ -1,4 +1,103 @@
-nav {
-    background-color: rebeccapurple;
-    padding: 12px;
-}
+            @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+         
+            html {
+                width: 100%;
+            }
+            
+            body {
+                width: 100%;
+                position: relative;
+                background-color: green;
+            }
+            
+            header {
+                padding: 28px 13% 0 13%;
+                background: url(images/MergedLayers.jpg);
+                background-position: center;
+                .logo {
+                    h2 {
+                        font-family: Montserrat;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: white
+                    }
+                }
+                .header_top_navbar {
+                    background-color: transparent;
+                    border: none;
+                    min-height: 0;
+                    padding-top: 8px;
+                    margin-bottom: 100px;
+                    ul {
+                        width: 100%;
+                        padding-left: 5%;
+                        li {
+                            float: right;
+                            margin-right: 5%;
+                            a {
+                                font: 400 14px Montserrat;
+                                padding: 0;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+                .header_content {
+                    text-align: center;
+                    h2 {
+                        color: #ffffff;
+                        font-size: 72px;
+                        font-family: 'Kaushan Script', cursive;
+                        padding-bottom: 30px;
+                    }
+                    h1 {
+                        color: #ffffff;
+                        font: 700 120px Montserrat;
+                    }
+                    button {
+                        color: #ffffff;
+                        font: 700 14px Montserrat;
+                        background-color: transparent;
+                        padding: 10px 30px;
+                        border: 1px solid white;
+                        margin-top: 50px;
+                        margin-bottom: 90px;
+                    }
+                }
+                .header_bottom_navbar {
+                    font-family: Montserrat;
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 0;
+                    ul {
+                        width: 100%;
+                        li {
+                            width: 20%;
+                            border-top: 2px solid white;
+                            margin-right: 5%;
+                            a {
+                                padding: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            #myNavbar a {
+                color: white
+                    
+            }
+            
+            #myNavbar a:hover {
+                color: #fce38a;
+                border-bottom: 2px solid #fce38a;
+            }
+            
+            #bottomNavbar a {
+                color: white
+            }
+            
+            #bottomNavbar a:hover {
+                border-top: 2px solid #fce38a;
+                color: #fce38a;
+            }
