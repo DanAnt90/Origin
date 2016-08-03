@@ -124,23 +124,24 @@ header .header_bottom_navbar ul li:last-child {
 .our_team_img {
   margin-top: 60px;
 }
-.our_team_img_container_main {
+.our_team_img_container_main_image {
   position: relative;
   background-color: orange;
-  max-width: 370px;
   margin: 0 auto;
 }
-.our_team_img_container_main img {
+.our_team_img_container_main_image img {
   margin-bottom: 25px;
+  width: 100%;
 }
-.our_team_img_container_main img:hover {
-  opacity: 0.2;
+.our_team_img_container_main_image:hover {
+  box-shadow: 5px 5px 0px 0px #95e1d3;
 }
 .our_team_img_container_hover {
   display: none;
   position: absolute;
-  top: 35%;
-  left: 31%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .our_team_img_container_hover h2 {
   color: #ffffff;
@@ -148,11 +149,6 @@ header .header_bottom_navbar ul li:last-child {
 }
 .our_team_img_container_main:hover .our_team_img_container_hover {
   display: block;
-}
-.our_team_img_container_main:hover {
-  -webkit-box-shadow: 5px 5px 0px 0px #95e1d3;
-  -moz-box-shadow: 5px 5px 0px 0px #95e1d3;
-  box-shadow: 5px 5px 0px 0px #95e1d3;
 }
 .servise {
   border-top: 90px solid #95e1d3;
@@ -187,6 +183,9 @@ header .header_bottom_navbar ul li:last-child {
 .servise_content_bottom:last-child {
   border: none;
 }
+.servise_img img {
+  padding-bottom: 20px;
+}
 .feature {
   padding: 28px 13% 0 13%;
   background: url(images/MergedLayers2.jpg);
@@ -208,7 +207,7 @@ header .header_bottom_navbar ul li:last-child {
 }
 .feature_img_two {
   position: absolute;
-  top: 50%;
+  bottom: -70px;
   left: 60%;
 }
 .servise_two {
@@ -285,4 +284,10 @@ header .header_bottom_navbar ul li:last-child {
 }
 .panel-group {
   margin-bottom: 0;
+}
+.opacityon {
+  opacity: 0.2;
+}
+.opacityoff {
+  opacity: 1;
 }

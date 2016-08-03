@@ -1,13 +1,16 @@
 html {
     min-width: 100%;
 }
+
 body {
     min-width: 100%;
     position: relative;
 }
+
 .wrapper {
     min-width: 100%;
 }
+
 header {
     padding: 28px 13% 0 13%;
     background: url(images/MergedLayers.jpg) no-repeat center center fixed;
@@ -86,20 +89,25 @@ header {
         }
     }
 }
+
 #myNavbar a {
     color: white
 }
+
 #myNavbar a:hover {
     color: #fce38a;
     border-bottom: 2px solid #fce38a;
 }
+
 #bottomNavbar a {
     color: white
 }
+
 #bottomNavbar a:hover {
     border-top: 2px solid #fce38a;
     color: #fce38a;
 }
+
 .our_team {
     padding: 28px 13%;
     &_text_content {
@@ -124,23 +132,24 @@ header {
     &_img {
         margin-top: 60px;
         &_container {
-            &_main {
+            &_main_image {
                 position: relative;
                 background-color: orange;
-                max-width: 370px;
                 margin: 0 auto;
                 img {
                     margin-bottom: 25px;
+                    width: 100%;
                 }
-                img:hover {
-                    opacity: 0.2;
-                }
+            }
+            &_main_image:hover {
+                box-shadow: 5px 5px 0px 0px #95e1d3;
             }
             &_hover {
                 display: none;
                 position: absolute;
-                top: 35%;
-                left: 31%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 h2 {
                     color: #ffffff;
                     font: 700 18px Montserrat;
@@ -149,14 +158,10 @@ header {
             &_main:hover .our_team_img_container_hover {
                 display: block;
             }
-            &_main:hover {
-                -webkit-box-shadow: 5px 5px 0px 0px #95e1d3;
-                -moz-box-shadow: 5px 5px 0px 0px #95e1d3;
-                box-shadow: 5px 5px 0px 0px #95e1d3;
-            }
         }
     }
 }
+
 .servise {
     border-top: 90px solid #95e1d3;
     padding: 28px 13%;
@@ -189,8 +194,13 @@ header {
     &_content_bottom:last-child {
         border: none;
     }
-    &_img {}
+    &_img {
+        img {
+            padding-bottom: 20px;
+        }
+    }
 }
+
 .feature {
     padding: 28px 13% 0 13%;
     background: url(images/MergedLayers2.jpg);
@@ -211,10 +221,11 @@ header {
     }
     &_img_two {
         position: absolute;
-        top: 50%;
+        bottom: -70px;
         left: 60%;
     }
 }
+
 .servise_two {
     &_container {
         margin-top: 60px;
@@ -291,6 +302,12 @@ header {
         }
     }
 }
+
 .panel-group {
     margin-bottom: 0;
+}
+.opacityon{
+    opacity: 0.2;
+}.opacityoff{
+    opacity: 1;
 }
