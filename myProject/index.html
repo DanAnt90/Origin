@@ -5,9 +5,11 @@
     <title>MyProject</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
@@ -34,13 +36,13 @@
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                                    <li><a href="#">CONTACT</a></li>
-                                    <li><a href="#">BLOG</a></li>
-                                    <li><a href="#">WORK</a></li>
-                                    <li><a href="#">SERVICE</a></li>
                                     <li><a href="#">ABOUT</a></li>
+                                    <li><a href="#">SERVICE</a></li>
+                                    <li><a href="#">WORK</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -86,6 +88,7 @@
             <div class="our_team_text_content">
                 <h3>What we do</h3>
                 <h2>STORY ABOUT US</h2>
+                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
@@ -93,21 +96,48 @@
             <div class="our_team_img container-fluid bg-3 text-center">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <img src="css/src/images/ourteam2.jpg" alt="Image" class="img_responsive">
+                        <div class="our_team_img_container">
+                            <div class="our_team_img_container_main">
+                                <img src="css/src/images/ourteam2.jpg" alt="Image" class="img_responsive">
+                                <div class="our_team_img_container_hover">
+                                    <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                                    <h2>SUPER TEAM</h2>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img src="css/src/images/ourteam2.jpg" alt="Image" class="img_responsive">
+                        <div class="our_team_img_container">
+                            <div class="our_team_img_container_main">
+                                <img src="css/src/images/ourteam2.jpg" alt="Image" class="img_responsive">
+                                <div class="our_team_img_container_hover">
+                                    <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                                    <h2>SUPER TEAM</h2>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img src="css/src/images/ourteam3.jpg" alt="Image" class="img_responsive">
+                        <div class="our_team_img_container">
+                            <div class="our_team_img_container_main">
+                                <img src="css/src/images/ourteam3.jpg" alt="Image" class="img_responsive">
+                                <div class="our_team_img_container_hover">
+                                    <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                                    <h2>SUPER TEAM</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="servise row">
+        <div class="servise">
             <div class="servise_content_top">
                 <h3>We work with</h3>
                 <h2>AMAZING SEVISES</h2>
+                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
             </div>
             <div class="servise_content_bottom row">
                 <div class="col-md-4">
@@ -194,18 +224,124 @@
 
             </div>
         </div>
+        <div class="feature">
+            <div class="feature_content">
+                <h3>For all devises</h3>
+                <h2>UNIQUE DESIGN</h2>
+                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+            </div>
+            <div class="feature_img_one">
+                <img src="css/src/images/display.png" alt="Image" class="img_responsive">
+            </div>
+            <div class="feature_img_two">
+                <img src="css/src/images/telephone.png" alt="Image" class="img_responsive">
+            </div>
+        </div>
 
 
+        <div class="servise_two">
+            <div class="servise_two_text_content">
+                <h3>Servise</h3>
+                <h2>WHAT WE DO</h2>
+                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="servise_two_main_content">
+                <div class="row">
+                    <div class="servise_two_main_content_img col-sm-6">
+                        <img src="css/src/images/layer43.jpg" alt="Image" class="img_responsive">
+                    </div>
+                    <div class="servise_two_main_content_accordeon col-sm-6">
+                        <div class="panel-group" id="accordion">
+                            <div class="servise_two_main_content_accordeon_panel panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        
+                                        
+                                        <h2>PHOTOGRAPHY</h2></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
 
-
-
-
-
-
-
-
-    </div>
-    <script src="js/src/script.js"></script>
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 панель -->
+                            <div class="servise_two_main_content_accordeon_panel panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <h2>CREATIVITY</h2></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 панель -->
+                            <div class="servise_two_main_content_accordeon_panel panel panel-default">
+                                <!-- Заголовок 3 панели -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><h2>WEB DESIGN</h2></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <!-- Содержимое 3 панели -->
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="servise_two_container">
+                <div class="servise_two_citat">
+                    <div class="row">
+                        <div class="servise_two_citat_img col-sm-2">
+                            <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
+                        </div>
+                        <div class="servise_two_citat_text_content col-sm-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="servise_two_citat">
+                    <div class="row">
+                        <div class="servise_two_citat_img col-sm-2">
+                            <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
+                        </div>
+                        <div class="servise_two_citat_text_content col-sm-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="servise_two_citat">
+                    <div class="row">
+                        <div class="servise_two_citat_img col-sm-2 col-xs-4">
+                            <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
+                        </div>
+                        <div class="servise_two_citat_text_content col-sm-10 col-xs-8">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+            <script defer src="js/src/script.js" type="text/javascript"></script>
 </body>
 
 </html>

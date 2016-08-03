@@ -1,0 +1,1 @@
+$(".servise_two_container").slick({dots:!1,infinite:!0,slidesToShow:1,slidesToScroll:1});
