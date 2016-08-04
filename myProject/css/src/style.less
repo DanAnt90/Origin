@@ -1,16 +1,29 @@
+.h2-mixin {
+    font: 700 30px Montserrat;
+    padding-bottom: 40px;
+}
+.p-mixin {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 40px;
+}
+.h3-mixin {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    padding-bottom: 23px;
+}
 html {
     min-width: 100%;
 }
-
 body {
     min-width: 100%;
     position: relative;
 }
-
 .wrapper {
     min-width: 100%;
 }
-
 header {
     padding: 28px 13% 0 13%;
     background: url(images/MergedLayers.jpg) no-repeat center center fixed;
@@ -89,44 +102,32 @@ header {
         }
     }
 }
-
 #myNavbar a {
     color: white
 }
-
 #myNavbar a:hover {
     color: #fce38a;
     border-bottom: 2px solid #fce38a;
 }
-
 #bottomNavbar a {
     color: white
 }
-
 #bottomNavbar a:hover {
     border-top: 2px solid #fce38a;
     color: #fce38a;
 }
-
-.our_team {
+.about_us {
     padding: 28px 13%;
     &_text_content {
         text-align: center;
         h3 {
-            font-family: 'Kaushan Script', cursive;
-            font-size: 24px;
-            padding-bottom: 23px;
+            .h3-mixin
         }
         h2 {
-            font: 700 30px Montserrat;
-            padding-bottom: 40px;
+            .h2-mixin
         }
         p {
-            font-family: 'Roboto', sans-serif;
-            color: #999999;
-            font-size: 15px;
-            line-height: 20px;
-            padding-top: 40px;
+            .p-mixin
         }
     }
     &_img {
@@ -138,7 +139,6 @@ header {
                 margin: 0 auto;
                 img {
                     margin-bottom: 25px;
-                    width: 100%;
                 }
             }
             &_main_image:hover {
@@ -147,21 +147,28 @@ header {
             &_hover {
                 display: none;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: orange;
+                opacity: 0.8;
                 h2 {
                     color: #ffffff;
                     font: 700 18px Montserrat;
                 }
+                img {
+                    padding-top: 22%;
+                }
             }
-            &_main:hover .our_team_img_container_hover {
+            &_main:hover .about_us_img_container_hover {
                 display: block;
             }
         }
     }
+    .static {
+        width: 100%;
+    }
 }
-
 .servise {
     border-top: 90px solid #95e1d3;
     padding: 28px 13%;
@@ -170,13 +177,10 @@ header {
         text-align: center;
         padding-bottom: 10px;
         h3 {
-            font-family: 'Kaushan Script', cursive;
-            font-size: 24px;
-            padding-bottom: 23px;
+            .h3-mixin
         }
         h2 {
-            font: 700 30px Montserrat;
-            padding-bottom: 40px;
+            .h2-mixin
         }
     }
     &_content_bottom {
@@ -200,23 +204,23 @@ header {
         }
     }
 }
-
 .feature {
     padding: 28px 13% 0 13%;
-    background: url(images/MergedLayers2.jpg);
+    background: url(images/MergedLayers2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position: center;
     position: relative;
     &_content {
         text-align: center;
         padding-bottom: 40px;
         h3 {
-            font-family: 'Kaushan Script', cursive;
-            font-size: 24px;
-            padding-bottom: 23px;
+            .h3-mixin
         }
         h2 {
-            font: 700 30px Montserrat;
-            padding-bottom: 40px;
+            .h2-mixin
         }
     }
     &_img_two {
@@ -225,7 +229,6 @@ header {
         left: 60%;
     }
 }
-
 .servise_two {
     &_container {
         margin-top: 60px;
@@ -256,15 +259,10 @@ header {
             padding-bottom: 23px;
         }
         h2 {
-            font: 700 30px Montserrat;
-            padding-bottom: 40px;
+            .h2-mixin
         }
         p {
-            font-family: 'Roboto', sans-serif;
-            color: #999999;
-            font-size: 15px;
-            line-height: 20px;
-            padding-top: 40px;
+            .p-mixin
         }
     }
     &_main_content {
@@ -278,10 +276,8 @@ header {
             font: italic 300 15px / 24px Roboto;
         }
         &_accordeon_panel {
-            max-height: 171px;
             overflow-y: hidden;
             overflow-y: scroll;
-            text-align: left;
             word-wrap: break-word;
         }
     }
@@ -302,12 +298,146 @@ header {
         }
     }
 }
-
-.panel-group {
-    margin-bottom: 0;
+.our_team {
+    padding: 50px 13% 28px 13%;
+    &_text_content {
+        text-align: center;
+        h3 {
+            .h3-mixin
+        }
+        h2 {
+            .h2-mixin
+        }
+        p {
+            .p-mixin
+        }
+    }
+    &_img {
+        margin: 60px 0 50px 0;
+        &_container {
+            &_main_image {
+                position: relative;
+                background-color: orange;
+                margin: 0 auto;
+                img {
+                    margin-bottom: 25px;
+                }
+            }
+            &_main_image:hover {
+                box-shadow: 5px 5px 0px 0px #95e1d3;
+            }
+            &_hover {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: orange;
+                opacity: 0.8;
+                h2 {
+                    color: #ffffff;
+                    font: 700 18px Montserrat;
+                }
+                img {
+                    padding-top: 50%;
+                }
+            }
+            &_main:hover .our_team_img_container_hover {
+                display: block;
+            }
+        }
+    }
+    .static {
+        width: 100%;
+    }
 }
-.opacityon{
-    opacity: 0.2;
-}.opacityoff{
-    opacity: 1;
+.what_people_say {
+    background: url(images/MergedLayers90.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 13% 0 13%;
+    &_text_content {
+        text-align: center;
+        padding-bottom: 50px;
+        h3 {
+            .h3-mixin
+        }
+        h2 {
+            .h2-mixin
+        }
+    }
+    &_main_content {
+        &_block {
+            padding-bottom: 80px;
+            h2 {
+                color: #333333;
+                font: 400 14px Montserrat;
+                padding-bottom: 15px;
+            }
+            h3 {
+                color: #333333;
+                font-family: 'Kaushan Script', cursive;
+                font-size: 16px;
+                padding-bottom: 25px;
+            }
+            p {
+                color: #999999;
+                font: 400 15px / 24px Roboto;
+            }
+            img {
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+.blog {
+    padding: 80px 13% 0 13%;
+    &_text_content {
+        padding-bottom: 60px;
+        text-align: center;
+        h3 {
+            .h3-mixin
+        }
+        h2 {
+            .h2-mixin
+        }
+    }
+    &_img_container_main {
+        position: relative;
+        img{
+            width: 100%;
+            padding-bottom: 25px;
+        }
+    }
+    &_text_container_main{
+        border-bottom: 1px solid #000;
+        h2{
+            color: #333333;
+            font: 400 14px Montserrat;
+        }
+        p{
+            color: #999999;
+            font: 400 15px / 24px Roboto;
+            word-break: keep-all
+        }
+    }
+    .label{
+        position: absolute;
+        background-color: #95e1d3;
+        bottom:80px;
+        left: -15px;
+        border-radius: 0;
+        padding: 5px 10px ;
+        h2{
+
+            font: 700 30px Montserrat;
+        }
+        p{
+
+            font: italic 300 15px Roboto;
+        }
+    }
 }
