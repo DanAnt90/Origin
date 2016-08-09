@@ -8,6 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g0XWD7ujP01vnrlYSnDaUo1dMdIabmw&language=en">
+
+
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -17,471 +21,469 @@
     <link href="css/src/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="row">
-                <div class="logo col-md-4 col-sm-12">
-                    <h2>MoGo</h2>
-                </div>
-                <div class="col-md-8 col-sm-12">
-                    <nav class="header_top_navbar navbar navbar-inverse">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <div class="collapse navbar-collapse" id="myNavbar">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#">ABOUT</a></li>
-                                    <li><a href="#">SERVICE</a></li>
-                                    <li><a href="#">WORK</a></li>
-                                    <li><a href="#">BLOG</a></li>
-                                    <li><a href="#">CONTACT</a></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-
+<body data-spy="scroll" data-target="header_bottom_navbar" data-offset="50" <div class="wrapper">
+    <header>
+        <div class="row">
+            <div class="logo col-md-4 col-sm-12">
+                <h2>MoGo</h2>
             </div>
-            <div class="row header_content">
-                <h2>
-                    Creative Template
-                </h2>
-                <h1>
-                    WELCOME <br> TO MOGO
-                </h1>
-                <button>LEARN MORE</button>
-            </div>
-            <div class="row">
-                <nav class="header_bottom_navbar navbar navbar-inverse">
+            <div class="col-md-8 col-sm-12">
+                <nav class="header_top_navbar navbar navbar-inverse">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bottomNavbar">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        <div>
-                            <div class="collapse navbar-collapse" id="bottomNavbar">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="#section1">01 INTRO</a></li>
-                                    <li><a href="#section2">02 WORK</a></li>
-                                    <li><a href="#section3">03 ABOUT</a></li>
-                                    <li><a href="#section4">04 CONTACTS</a></li>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">SERVICE</a></li>
+                                <li><a href="#">WORK</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-        </header>
+
+        </div>
+        <div class="header_content row">
+            <h2>
+                    Creative Template
+                </h2>
+            <h1>
+                    WELCOME <br> TO MOGO
+                </h1>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="row">
+            <nav class="header_bottom_navbar navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bottomNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="collapse navbar-collapse" id="bottomNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#section1">INTRO</a></li>
+                                <li><a href="#section2">WORK</a></li>
+                                <li><a href="#section3">ABOUT</a></li>
+                                <li><a href="#section4">BLOG</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 
 
-        <div class="about_us">
-            <div class="about_us_text_content">
-                <h3>What we do</h3>
-                <h2>STORY ABOUT US</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+    <div class="about_us" id="section1">
+        <div class="about_us_text_content">
+            <h3>What we do</h3>
+            <h2>STORY ABOUT US</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="about_us_img container-fluid bg-3 text-center">
+            <div class="col-md-4 col-sm-4">
+                <div class="about_us_img_container_main">
+                    <div class="about_us_img_container_main_image">
+                        <img src="css/src/images/ourteam2.jpg" alt="Image" class="img_responsive static">
+                        <div class="about_us_img_container_hover">
+                            <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                            <h2>SUPER TEAM</h2>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="about_us_img container-fluid bg-3 text-center">
-                <div class="col-md-4 col-sm-4">
-                    <div class="about_us_img_container_main">
-                        <div class="about_us_img_container_main_image">
-                            <img src="css/src/images/ourteam2.jpg" alt="Image" class="img_responsive static">
-                            <div class="about_us_img_container_hover">
-                                <img src="css/src/images/users.png" alt="Image" class="img_responsive">
-                                <h2>SUPER TEAM</h2>
-                            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="about_us_img_container_main">
+                    <div class="about_us_img_container_main_image">
+                        <img src="css/src/images/ourteam22.jpg" alt="Image" class="img_responsive static">
+                        <div class="about_us_img_container_hover">
+                            <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                            <h2>SUPER TEAM</h2>
                         </div>
-
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="about_us_img_container_main">
-                        <div class="about_us_img_container_main_image">
-                            <img src="css/src/images/ourteam22.jpg" alt="Image" class="img_responsive static">
-                            <div class="about_us_img_container_hover">
-                                <img src="css/src/images/users.png" alt="Image" class="img_responsive">
-                                <h2>SUPER TEAM</h2>
-                            </div>
-                        </div>
 
-                    </div>
                 </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="about_us_img_container_main">
-                        <div class="about_us_img_container_main_image">
-                            <img src="css/src/images/ourteam3.jpg" alt="Image" class="img_responsive static">
-                            <div class="about_us_img_container_hover">
-                                <img src="css/src/images/users.png" alt="Image" class="img_responsive">
-                                <h2>SUPER TEAM</h2>
-                            </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="about_us_img_container_main">
+                    <div class="about_us_img_container_main_image">
+                        <img src="css/src/images/ourteam3.jpg" alt="Image" class="img_responsive static">
+                        <div class="about_us_img_container_hover">
+                            <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                            <h2>SUPER TEAM</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <div class="servise">
-            <div class="servise_content_top">
-                <h3>We work with</h3>
-                <h2>AMAZING SEVISES</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
-            </div>
-            <div class="servise_content_bottom row">
-                <div class="col-md-4">
-                    <div class="servise_img col-md-3">
-                        <img src="css/src/images/alarm.png" alt="Image" class="img_responsive">
-                    </div>
-                    <div class="col-md-9">
-                        <h3>
+    <div class="servise">
+        <div class="servise_content_top" id="section2">
+            <h3>We work with</h3>
+            <h2>AMAZING SEVISES</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+        </div>
+        <div class="servise_content_bottom row">
+            <div class="col-md-4">
+                <div class="servise_img col-md-3">
+                    <img src="css/src/images/alarm.png" alt="Image" class="img_responsive">
+                </div>
+                <div class="col-md-9">
+                    <h3>
                         PHOTOGRAPHY
                     </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <div class="servise_img col-md-3">
-                        <img src="css/src/images/line.png" alt="Image" class="img_responsive">
-                    </div>
-                    <div class="col-md-9">
-                        <h3>
+            </div>
+            <div class="col-md-4">
+                <div class="servise_img col-md-3">
+                    <img src="css/src/images/line.png" alt="Image" class="img_responsive">
+                </div>
+                <div class="col-md-9">
+                    <h3>
                         WEB DESIGN
                     </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <div class="servise_img col-md-3">
-                        <img src="css/src/images/ok.png" alt="Image" class="img_responsive">
-                    </div>
-                    <div class="col-md-9">
-                        <h3>
+            </div>
+            <div class="col-md-4">
+                <div class="servise_img col-md-3">
+                    <img src="css/src/images/ok.png" alt="Image" class="img_responsive">
+                </div>
+                <div class="col-md-9">
+                    <h3>
                         CREATIVITY
                     </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
-
             </div>
-            <div class="servise_content_bottom row">
-                <div class="col-md-4">
-                    <div class="servise_img col-md-3">
-                        <img src="css/src/images/book.png" alt="Image" class="img_responsive">
-                    </div>
-                    <div class="col-md-9">
-                        <h3>
+
+        </div>
+        <div class="servise_content_bottom row">
+            <div class="col-md-4">
+                <div class="servise_img col-md-3">
+                    <img src="css/src/images/book.png" alt="Image" class="img_responsive">
+                </div>
+                <div class="col-md-9">
+                    <h3>
                           SEO
                     </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <div class="servise_img col-md-3">
-                        <img src="css/src/images/home.png" alt="Image" class="img_responsive">
-                    </div>
-                    <div class="col-md-9">
-                        <h3>
+            </div>
+            <div class="col-md-4">
+                <div class="servise_img col-md-3">
+                    <img src="css/src/images/home.png" alt="Image" class="img_responsive">
+                </div>
+                <div class="col-md-9">
+                    <h3>
                         CSS/HTML
                     </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <div class="servise_img col-md-3">
-                        <img src="css/src/images/image.png" alt="Image" class="img_responsive">
-                    </div>
-                    <div class="col-md-9">
-                        <h3>
+            </div>
+            <div class="col-md-4">
+                <div class="servise_img col-md-3">
+                    <img src="css/src/images/image.png" alt="Image" class="img_responsive">
+                </div>
+                <div class="col-md-9">
+                    <h3>
                         DIGITAL
                     </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature_content">
+            <h3>For all devises</h3>
+            <h2>UNIQUE DESIGN</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+        </div>
+        <div class="feature_img_one">
+            <img src="css/src/images/display.png" alt="Image" class="img_responsive">
+        </div>
+        <div class="feature_img_two">
+            <img src="css/src/images/telephone.png" alt="Image" class="img_responsive">
+        </div>
+    </div>
+
+
+    <div class="servise_two">
+        <div class="servise_two_text_content">
+            <h3>Servise</h3>
+            <h2>WHAT WE DO</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="servise_two_main_content">
+            <div class="row">
+                <div class="servise_two_main_content_img col-sm-6">
+                    <img src="css/src/images/layer43.jpg" alt="Image" class="img_responsive">
+                </div>
+                <div class="servise_two_main_content_accordeon col-sm-6">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h2>PHOTOGRAPHY</h2></a>
+                                    </h4>
+                            </div>
+                            <div id="collapse1" class="servise_two_main_content_accordeon_panel  panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h2>CREATIVITY</h2></a>
+                                    </h4>
+                            </div>
+                            <div id="collapse2" class="servise_two_main_content_accordeon_panel panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h2>WEB DESIGN</h2></a>
+                                    </h4>
+                            </div>
+                            <div id="collapse3" class="servise_two_main_content_accordeon_panel  panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="servise_two_container">
+                <div class="servise_two_citat">
+                    <div class="row">
+                        <div class="servise_two_citat_img col-sm-2">
+                            <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
+                        </div>
+                        <div class="servise_two_citat_text_content col-sm-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="servise_two_citat">
+                    <div class="row">
+                        <div class="servise_two_citat_img col-sm-2">
+                            <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
+                        </div>
+                        <div class="servise_two_citat_text_content col-sm-10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our_team" id="section3">
+        <div class="our_team_text_content">
+            <h3>Servise</h3>
+            <h2>MEET OUR TEAM</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div class="our_team_img container-fluid bg-3 text-center">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="our_team_img_container_main">
+                        <div class="our_team_img_container_main_image">
+                            <img src="css/src/images/layer18.jpg" alt="Image" class="img_responsive static">
+                            <div class="our_team_img_container_hover">
+                                <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                                <h2>OUR TEAM</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="our_team_img_container_main">
+                        <div class="our_team_img_container_main_image">
+                            <img src="css/src/images/layer18.jpg" alt="Image" class="img_responsive static">
+                            <div class="our_team_img_container_hover">
+                                <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                                <h2>OUR TEAM</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="our_team_img_container_main">
+                        <div class="our_team_img_container_main_image">
+                            <img src="css/src/images/layer19.jpg" alt="Image" class="img_responsive static">
+                            <div class="our_team_img_container_hover">
+                                <img src="css/src/images/users.png" alt="Image" class="img_responsive">
+                                <h2>OUR TEAM</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="css/src/images/layer25.png" alt="Image" class="img_responsive" id="label">
+    </div>
+
+    <div class="what_people_say">
+        <div class="what_people_say_text_content">
+            <h3>Happy Clients</h3>
+            <h2>WHAT PEOPLE SAY</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+        </div>
+        <div class="what_people_say_main_content">
+            <div class="row">
+                <div class="what_people_say_main_content_block col-sm-6">
+                    <div class="what_people_say_img col-sm-3">
+                        <img src="css/src/images/layer47.png" alt="Image" class="img_responsive">
+                    </div>
+                    <div class="what_people_say_citat_text_content col-sm-9">
+                        <h2>WHAT PEOPLE SAY</h2>
+                        <h3>Happy Clients</h3>
+                        <img src="css/src/images/rectangle.png" alt="Image">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-        <div class="feature">
-            <div class="feature_content">
-                <h3>For all devises</h3>
-                <h2>UNIQUE DESIGN</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
-            </div>
-            <div class="feature_img_one">
-                <img src="css/src/images/display.png" alt="Image" class="img_responsive">
-            </div>
-            <div class="feature_img_two">
-                <img src="css/src/images/telephone.png" alt="Image" class="img_responsive">
-            </div>
-        </div>
-
-
-        <div class="servise_two">
-            <div class="servise_two_text_content">
-                <h3>Servise</h3>
-                <h2>WHAT WE DO</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="servise_two_main_content">
-                <div class="row">
-                    <div class="servise_two_main_content_img col-sm-6">
-                        <img src="css/src/images/layer43.jpg" alt="Image" class="img_responsive">
+                <div class="what_people_say_main_content_block col-sm-6">
+                    <div class="what_people_say_img col-sm-3">
+                        <img src="css/src/images/layer49.png" alt="Image" class="img_responsive">
                     </div>
-                    <div class="servise_two_main_content_accordeon col-sm-6">
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h2>PHOTOGRAPHY</h2></a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1" class="servise_two_main_content_accordeon_panel  panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h2>CREATIVITY</h2></a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="servise_two_main_content_accordeon_panel panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h2>WEB DESIGN</h2></a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="servise_two_main_content_accordeon_panel  panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="what_people_say_citat_text_content col-sm-9">
+                        <h2>WHAT PEOPLE SAY</h2>
+                        <h3>Happy Clients</h3>
+                        <img src="css/src/images/rectangle.png" alt="Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
                 </div>
-
-
-
-                <div class="servise_two_container">
-                    <div class="servise_two_citat">
-                        <div class="row">
-                            <div class="servise_two_citat_img col-sm-2">
-                                <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
-                            </div>
-                            <div class="servise_two_citat_text_content col-sm-10">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="servise_two_citat">
-                        <div class="row">
-                            <div class="servise_two_citat_img col-sm-2">
-                                <img src="css/src/images/merged.png" alt="Image" class="img_responsive">
-                            </div>
-                            <div class="servise_two_citat_text_content col-sm-10">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive"><span>Jon Doe</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="our_team">
-            <div class="our_team_text_content">
-                <h3>Servise</h3>
-                <h2>MEET OUR TEAM</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-
-            <div class="our_team_img container-fluid bg-3 text-center">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="our_team_img_container_main">
-                            <div class="our_team_img_container_main_image">
-                                <img src="css/src/images/layer18.jpg" alt="Image" class="img_responsive static">
-                                <div class="our_team_img_container_hover">
-                                    <img src="css/src/images/users.png" alt="Image" class="img_responsive">
-                                    <h2>OUR TEAM</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="our_team_img_container_main">
-                            <div class="our_team_img_container_main_image">
-                                <img src="css/src/images/layer18.jpg" alt="Image" class="img_responsive static">
-                                <div class="our_team_img_container_hover">
-                                    <img src="css/src/images/users.png" alt="Image" class="img_responsive">
-                                    <h2>OUR TEAM</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="our_team_img_container_main">
-                            <div class="our_team_img_container_main_image">
-                                <img src="css/src/images/layer19.jpg" alt="Image" class="img_responsive static">
-                                <div class="our_team_img_container_hover">
-                                    <img src="css/src/images/users.png" alt="Image" class="img_responsive">
-                                    <h2>OUR TEAM</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="css/src/images/layer25.png" alt="Image" class="img_responsive" id="label">
-        </div>
-
-        <div class="what_people_say">
-            <div class="what_people_say_text_content">
-                <h3>Happy Clients</h3>
-                <h2>WHAT PEOPLE SAY</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
-            </div>
-            <div class="what_people_say_main_content">
-                <div class="row">
-                    <div class="what_people_say_main_content_block col-sm-6">
-                        <div class="what_people_say_img col-sm-3">
-                            <img src="css/src/images/layer47.png" alt="Image" class="img_responsive">
-                        </div>
-                        <div class="what_people_say_citat_text_content col-sm-9">
-                            <h2>WHAT PEOPLE SAY</h2>
-                            <h3>Happy Clients</h3>
-                            <img src="css/src/images/rectangle.png" alt="Image">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="what_people_say_main_content_block col-sm-6">
-                        <div class="what_people_say_img col-sm-3">
-                            <img src="css/src/images/layer49.png" alt="Image" class="img_responsive">
-                        </div>
-                        <div class="what_people_say_citat_text_content col-sm-9">
-                            <h2>WHAT PEOPLE SAY</h2>
-                            <h3>Happy Clients</h3>
-                            <img src="css/src/images/rectangle.png" alt="Image">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="what_people_say_main_content_block col-sm-6">
-                        <div class="what_people_say_main_content_block what_people_say_citat_img col-sm-3">
-                            <img src="css/src/images/layer50.png" alt="Image" class="img_responsive">
-                        </div>
-                        <div class="what_people_say_citat_text_content col-sm-9">
-                            <h2>WHAT PEOPLE SAY</h2>
-                            <h3>Happy Clients</h3>
-                            <img src="css/src/images/rectangle.png" alt="Image">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="what_people_say_main_content_block col-sm-6">
-                        <div class="swhat_people_say_citat_img col-sm-3">
-                            <img src="css/src/images/layer51.png" alt="Image" class="img_responsive">
-                        </div>
-                        <div class="what_people_say_citat_text_content col-sm-9">
-                            <h2>WHAT PEOPLE SAY</h2>
-                            <h3>Happy Clients</h3>
-                            <img src="css/src/images/rectangle.png" alt="Image">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blog">
-            <div class="blog_text_content">
-                <h3>Our storeies</h3>
-                <h2>LATEST BLOG</h2>
-                <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="blog_img_container_main">
-                        <img src="css/src/images/layer54.jpg" alt="Image" class="img_responsive static">
-                        <div class="label">
-                            <h2>15</h2>
-                            <p>Jan</p>
-                        </div>
+                <div class="what_people_say_main_content_block col-sm-6">
+                    <div class="what_people_say_citat_img col-sm-3">
+                        <img src="css/src/images/layer50.png" alt="Image" class="img_responsive">
                     </div>
-
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="blog_img_container_main">
-                        <img src="css/src/images/layer55.jpg" alt="Image" class="img_responsive static">
-                        <div class="label">
-                            <h2>14</h2>
-                            <p>Jan</p>
-                        </div>
+                    <div class="what_people_say_citat_text_content col-sm-9">
+                        <h2>WHAT PEOPLE SAY</h2>
+                        <h3>Happy Clients</h3>
+                        <img src="css/src/images/rectangle.png" alt="Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="blog_img_container_main">
-                        <img src="css/src/images/layer57.jpg" alt="Image" class="img_responsive static">
-                        <div class="label">
-                            <h2>12</h2>
-                            <p>Jan</p>
-                        </div>
+                <div class="what_people_say_main_content_block col-sm-6">
+                    <div class="swhat_people_say_citat_img col-sm-3">
+                        <img src="css/src/images/layer51.png" alt="Image" class="img_responsive">
+                    </div>
+                    <div class="what_people_say_citat_text_content col-sm-9">
+                        <h2>WHAT PEOPLE SAY</h2>
+                        <h3>Happy Clients</h3>
+                        <img src="css/src/images/rectangle.png" alt="Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="blog">
+        <div class="blog_text_content" id="section4">
+            <h3>Our storeies</h3>
+            <h2>LATEST BLOG</h2>
+            <img src="css/src/images/rectangle.png" alt="Image" class="img_responsive">
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="blog_img_container_main">
+                    <img src="css/src/images/layer54.jpg" alt="Image" class="img_responsive static">
+                    <div class="label">
+                        <h2>15</h2>
+                        <p>Jan</p>
+                    </div>
+                </div>
 
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="blog_img_container_main">
+                    <img src="css/src/images/layer55.jpg" alt="Image" class="img_responsive static">
+                    <div class="label">
+                        <h2>14</h2>
+                        <p>Jan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="blog_img_container_main">
+                    <img src="css/src/images/layer57.jpg" alt="Image" class="img_responsive static">
+                    <div class="label">
+                        <h2>12</h2>
+                        <p>Jan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>

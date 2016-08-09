@@ -446,14 +446,53 @@ header .header_bottom_navbar ul li:last-child {
 .blog .label {
   position: absolute;
   background-color: #95e1d3;
-  bottom: 80px;
-  left: -15px;
+  bottom: 30px;
+  left: -20px;
   border-radius: 0;
-  padding: 5px 10px ;
+  padding: 5px 10px;
 }
 .blog .label h2 {
   font: 700 30px Montserrat;
 }
 .blog .label p {
   font: italic 300 15px Roboto;
+}
+@media (max-width: 835px) {
+  header .header_content h1 {
+    font-size: 90px;
+  }
+  .servise_img img {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 760px) {
+  header .header_content h1 {
+    font-size: 50px;
+  }
+  header .header_content h1 {
+    font-size: 70px;
+  }
+  .servise_two_main_content_accordeon {
+    padding-top: 30px;
+  }
+  .servise_two_citat_img img {
+    padding-bottom: 25px;
+  }
+  .what_people_say_citat_text_content {
+    text-align: center;
+  }
+  .what_people_say_citat_text_content h2 {
+    text-align: center;
+  }
+  .what_people_say_citat_text_content h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 475px) {
+  header .header_content h1 {
+    font-size: 30px;
+  }
+  header .header_content h1 {
+    font-size: 50px;
+  }
 }
