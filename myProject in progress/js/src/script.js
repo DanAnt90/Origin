@@ -43,36 +43,33 @@ google.maps.event.addDomListener(window, 'load', initialize);
 var $form = $(".form").eq(0),
     $name = $("#name").eq(0),
     $surName = $("#surname").eq(0),
-    $age = $("#age").eq(0),
+    $country = $("#country").eq(0),
     $email = $("#email").eq(0),
     $error = $("p.error").eq(0);
 
 $form.on("submit", function (event) {
     event.preventDefault();
     if ($name.val().length < 1) {
-        $error.html("Не корректный ввод  имени");
+        $error.html("Not the correct input name");
         return;
     }
     if ($surName.val().length < 2) {
-        $error.html("Не корректный ввод фамилии");
+        $error.html("Not the correct input surname");
         return;
     }
-    if ($age.val() === "") {
-        $error.html("Введите возраст")
-        return;
-    } else if (isNaN($age.val())) {
-        $error.html("Не корректный ввод возраста")
+ if ($country.val().length < 2) {
+        $error.html("Not the correct input country");
         return;
     }
     if ($email.val() === "") {
-        $error.html("Введите email")
+        $error.html("enter email")
         return;
     }
     var $regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var $emailExp = $regexp.test($email.val());
     if ($emailExp == false) {
-        $error.html("Не корректный ввод email")
+        $error.html("Not the correct input email")
         return;
     }
-    $(this).submit();
+    this.submit();
 })
