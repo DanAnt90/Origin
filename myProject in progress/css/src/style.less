@@ -37,14 +37,6 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    .logo {
-        h2 {
-            font-family: Montserrat;
-            font-size: 30px;
-            font-weight: 700;
-            color: white
-        }
-    }
     .header_top_navbar {
         background-color: transparent;
         border: none;
@@ -52,16 +44,17 @@ header {
         padding-top: 8px;
         margin-bottom: 100px;
         ul {
-            width: 100%;
-            padding-left: 5%;
             li {
-                margin-right: 5%;
                 a {
                     font: 400 14px Montserrat;
-                    padding: 0;
-                    padding-bottom: 5px;
                 }
             }
+        }
+        h2 {
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 700;
+            color: white
         }
     }
     .header_content {
@@ -124,7 +117,6 @@ header {
 
 #bottomNavbar a:hover {
     border-top: 2px solid #fce38a;
-    color: #fce38a;
 }
 
 .about_us {
@@ -423,7 +415,7 @@ header {
 }
 
 .blog {
-    padding: 80px 13% 0 13%;
+    padding: 30px 13% 0 13%;
     &_text_content {
         padding-bottom: 60px;
         text-align: center;
@@ -544,6 +536,7 @@ header {
 
 #google_map {
     height: 400px;
+    display: none;
 }
 
 footer {
@@ -635,5 +628,39 @@ footer {
                 font-size: 50px;
             }
         }
+    }
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
     }
 }

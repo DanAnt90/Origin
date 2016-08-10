@@ -13,6 +13,7 @@ $(".servise_two_container").slick({
 
 $(".map").on("click", function () {
     $("#google_map").slideToggle();
+    setTimeout(initialize, 500);
 })
 
 
@@ -57,7 +58,7 @@ $form.on("submit", function (event) {
         $error.html("Not the correct input surname");
         return;
     }
- if ($country.val().length < 2) {
+    if ($country.val().length < 2) {
         $error.html("Not the correct input country");
         return;
     }
@@ -73,3 +74,17 @@ $form.on("submit", function (event) {
     }
     this.submit();
 })
+
+$(window).scroll(function () {
+    $(".slideanim").each(function () {
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+            $(this).addClass("slide");
+        }
+    });
+});
+
+
+
