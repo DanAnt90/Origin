@@ -16,7 +16,7 @@ gulp.task('minify_js', function() {
 });
 
 gulp.task('minify_css', function() {
-        return gulp.src('./css/src/style.less' )
+        return gulp.src('./css/src/main.less' )
             .pipe(sourcemap.init())
             .pipe(less())
             .pipe(sourcemap.write())
@@ -28,5 +28,5 @@ gulp.task('minify_css', function() {
 
 gulp.task('default', function() {
     gulp.watch('js/src/*.js', ['minify_js']);
-    gulp.watch('css/src/*.less', ['minify_css']);
+    gulp.watch('css/src/**/*.less', ['minify_css']);
 });

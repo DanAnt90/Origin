@@ -86,5 +86,17 @@ $(window).scroll(function () {
     });
 });
 
-
-
+// Scroll Up Page
+$(".up").hide();
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $(".up").fadeIn();
+    } else {
+        $(".up").fadeOut();
+    }
+});
+$(".up").click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 800);
+})
