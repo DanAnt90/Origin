@@ -2,7 +2,6 @@
     font: 700 30px Montserrat;
     padding-bottom: 40px;
 }
-
 .p-mixin {
     font-family: 'Roboto', sans-serif;
     color: #999999;
@@ -10,29 +9,24 @@
     line-height: 20px;
     padding-top: 40px;
 }
-
 .h3-mixin {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     padding-bottom: 23px;
 }
-
 html {
     min-width: 100%;
 }
-
 body {
     min-width: 100%;
     position: relative;
 }
-
 .wrapper {
     min-width: 100%;
 }
-
 header {
     padding: 28px 13% 0 13%;
-    background: url(images/MergedLayers.jpg) no-repeat center center fixed;
+    background: url(images/bgheader.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,22 +96,23 @@ header {
     }
 }
 
+/*HEADER BLOCK*/
+
 #myNavbar a {
     color: white
 }
-
 #myNavbar a:hover {
     color: #fce38a;
     border-bottom: 2px solid #fce38a;
 }
-
 #bottomNavbar a {
     color: white
 }
-
 #bottomNavbar a:hover {
     border-top: 2px solid #fce38a;
 }
+
+/*ABOUT_US BLOCK*/
 
 .about_us {
     padding: 28px 13%;
@@ -173,6 +168,8 @@ header {
     }
 }
 
+/*SERVISE BLOCK*/
+
 .servise {
     border-top: 90px solid #95e1d3;
     padding: 28px 13%;
@@ -209,9 +206,11 @@ header {
     }
 }
 
+/*FUTURE BLOCK*/
+
 .feature {
     padding: 28px 13% 0 13%;
-    background: url(images/MergedLayers2.jpg) no-repeat center center fixed;
+    background: url(images/bgfeature.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -234,6 +233,8 @@ header {
         left: 60%;
     }
 }
+
+/*SERVISE_TWO BLOCK*/
 
 .servise_two {
     &_container {
@@ -306,6 +307,8 @@ header {
     }
 }
 
+/*OUR_TEAM BLOCK*/
+
 .our_team {
     padding: 50px 13% 28px 13%;
     &_text_content {
@@ -371,8 +374,10 @@ header {
     }
 }
 
+/*WHAT_PEOPLE_SAY BLOCK*/
+
 .what_people_say {
-    background: url(images/MergedLayers90.jpg) no-repeat center center fixed;
+    background: url(images/bgwhatpeoplesay.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -413,6 +418,8 @@ header {
         }
     }
 }
+
+/*BLOG BLOCK*/
 
 .blog {
     padding: 30px 13% 0 13%;
@@ -459,6 +466,8 @@ header {
         }
     }
 }
+
+/*CONTACT_US BLOCK*/
 
 .contact_us {
     padding: 50px 13% 28px 13%;
@@ -516,6 +525,8 @@ header {
     }
 }
 
+/*MAPs BLOCK*/
+
 .map {
     background: url(images/mapbg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -533,12 +544,10 @@ header {
         padding-bottom: 18px;
     }
 }
-
 #google_map {
     height: 400px;
     display: none;
 }
-
 footer {
     text-align: center;
     h2 {
@@ -549,7 +558,6 @@ footer {
         }
     }
 }
-
 @media (max-width: 835px) {
     header {
         .header_content {
@@ -564,7 +572,6 @@ footer {
         }
     }
 }
-
 @media (max-width: 760px) {
     header {
         .header_content {
@@ -617,7 +624,6 @@ footer {
         text-align: center
     }
 }
-
 @media (max-width: 475px) {
     header {
         .header_content {
@@ -625,16 +631,14 @@ footer {
                 font-size: 30px;
             }
             h1 {
-                font-size: 50px;
+                font-size: 45px;
             }
         }
     }
 }
-
 .slideanim {
     visibility: hidden;
 }
-
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -642,7 +646,6 @@ footer {
     -webkit-animation-duration: 1s;
     visibility: visible;
 }
-
 @keyframes slide {
     0% {
         opacity: 0;
@@ -653,7 +656,6 @@ footer {
         -webkit-transform: translateY(0%);
     }
 }
-
 @-webkit-keyframes slide {
     0% {
         opacity: 0;

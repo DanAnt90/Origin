@@ -27,7 +27,7 @@ body {
 }
 header {
   padding: 28px 13% 0 13%;
-  background: url(images/MergedLayers.jpg) no-repeat center center fixed;
+  background: url(images/bgheader.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,6 +92,7 @@ header .header_bottom_navbar ul li a {
 header .header_bottom_navbar ul li:last-child {
   margin-right: 0;
 }
+/*HEADER BLOCK*/
 #myNavbar a {
   color: white;
 }
@@ -105,6 +106,7 @@ header .header_bottom_navbar ul li:last-child {
 #bottomNavbar a:hover {
   border-top: 2px solid #fce38a;
 }
+/*ABOUT_US BLOCK*/
 .about_us {
   padding: 28px 13%;
 }
@@ -163,6 +165,7 @@ header .header_bottom_navbar ul li:last-child {
 .about_us .static {
   width: 100%;
 }
+/*SERVISE BLOCK*/
 .servise {
   border-top: 90px solid #95e1d3;
   padding: 28px 13%;
@@ -199,9 +202,10 @@ header .header_bottom_navbar ul li:last-child {
 .servise_img img {
   padding-bottom: 20px;
 }
+/*FUTURE BLOCK*/
 .feature {
   padding: 28px 13% 0 13%;
-  background: url(images/MergedLayers2.jpg) no-repeat center center fixed;
+  background: url(images/bgfeature.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -227,6 +231,7 @@ header .header_bottom_navbar ul li:last-child {
   bottom: -70px;
   left: 60%;
 }
+/*SERVISE_TWO BLOCK*/
 .servise_two {
   padding: 90px 13% 28px 13%;
 }
@@ -300,6 +305,7 @@ header .header_bottom_navbar ul li:last-child {
   margin-bottom: 5px;
   margin-right: 5px;
 }
+/*OUR_TEAM BLOCK*/
 .our_team {
   padding: 50px 13% 28px 13%;
 }
@@ -367,8 +373,9 @@ header .header_bottom_navbar ul li:last-child {
 .our_team .static {
   width: 100%;
 }
+/*WHAT_PEOPLE_SAY BLOCK*/
 .what_people_say {
-  background: url(images/MergedLayers90.jpg) no-repeat center center fixed;
+  background: url(images/bgwhatpeoplesay.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -410,6 +417,7 @@ header .header_bottom_navbar ul li:last-child {
 .what_people_say_main_content_block img {
   padding-bottom: 24px;
 }
+/*BLOG BLOCK*/
 .blog {
   padding: 30px 13% 0 13%;
 }
@@ -456,6 +464,7 @@ header .header_bottom_navbar ul li:last-child {
 .blog .label p {
   font: italic 300 15px Roboto;
 }
+/*CONTACT_US BLOCK*/
 .contact_us {
   padding: 50px 13% 28px 13%;
 }
@@ -516,6 +525,7 @@ header .header_bottom_navbar ul li:last-child {
 .contact_us .error {
   color: red;
 }
+/*MAPs BLOCK*/
 .map {
   background: url(images/mapbg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -602,7 +612,7 @@ footer h2 span {
     font-size: 30px;
   }
   header .header_content h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 .slideanim {
