@@ -14,7 +14,7 @@ $(".servise_two_container").slick({
 $(".map").on("click", function () {
     $("#google_map").slideToggle();
     setTimeout(initialize, 500);
-})
+});
 
 
 var myCenter = new google.maps.LatLng(51.508742, -0.120850);
@@ -73,7 +73,9 @@ $form.on("submit", function (event) {
         return;
     }
     this.submit();
-})
+});
+
+//BOOTSTRAP Effect
 
 $(window).scroll(function () {
     $(".slideanim").each(function () {
@@ -99,4 +101,4 @@ $(".up").click(function () {
     $('body,html').animate({
         scrollTop: 0
     }, 800);
-})
+});
